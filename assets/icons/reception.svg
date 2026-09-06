@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Royal Chandelier / Grand Reception -->
+  <defs>
+    <linearGradient id="recGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF8E1"/>
+      <stop offset="50%" stop-color="#FFD54F"/>
+      <stop offset="100%" stop-color="#FFA000"/>
+    </linearGradient>
+  </defs>
+  <!-- Ceiling Chain -->
+  <line x1="50" y1="5" x2="50" y2="28" stroke="url(#recGold)" stroke-width="2"/>
+  <circle cx="50" cy="28" r="4" fill="url(#recGold)"/>
+  <!-- Tier 1 Crown -->
+  <path d="M35 34 Q50 40 65 34" stroke="url(#recGold)" stroke-width="2" fill="none"/>
+  <!-- Main Arms -->
+  <path d="M50 40 C30 40 18 52 18 64 C26 64 34 56 50 56 C66 56 74 64 82 64 C82 52 70 40 50 40 Z" fill="url(#recGold)" opacity="0.85"/>
+  <!-- Candle Lights -->
+  <rect x="22" y="56" width="4" height="8" fill="#FFFDE7"/>
+  <rect x="48" y="52" width="4" height="8" fill="#FFFDE7"/>
+  <rect x="74" y="56" width="4" height="8" fill="#FFFDE7"/>
+  <!-- Flame Drops -->
+  <ellipse cx="24" cy="53" rx="2" ry="3.5" fill="#FFC107"/>
+  <ellipse cx="50" cy="49" rx="2" ry="3.5" fill="#FFC107"/>
+  <ellipse cx="76" cy="53" rx="2" ry="3.5" fill="#FFC107"/>
+  <!-- Crystal Prisms Hanging Below -->
+  <path d="M50 68 L53 78 L50 84 L47 78 Z" fill="url(#recGold)"/>
+  <path d="M30 68 L33 76 L30 81 L27 76 Z" fill="url(#recGold)"/>
+  <path d="M70 68 L73 76 L70 81 L67 76 Z" fill="url(#recGold)"/>
+  <!-- Sparkles -->
+  <circle cx="24" cy="42" r="1.5" fill="#FFF9C4"/>
+  <circle cx="76" cy="42" r="1.5" fill="#FFF9C4"/>
+  <circle cx="50" cy="90" r="2" fill="#FFD54F"/>
+</svg>

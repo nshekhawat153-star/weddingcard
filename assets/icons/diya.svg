@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Auspicious Brass Diya -->
+  <defs>
+    <linearGradient id="brassGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="40%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#8D6E63"/>
+    </linearGradient>
+    <radialGradient id="diyaGlow" cx="50%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="25%" stop-color="#FFEB3B"/>
+      <stop offset="60%" stop-color="#FF5722"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+  <!-- Flame Glow Aura -->
+  <circle cx="50" cy="32" r="28" fill="url(#diyaGlow)" opacity="0.4"/>
+  <!-- Diya Body -->
+  <path d="M18 55 Q24 78 50 78 Q76 78 82 55 Q50 64 18 55 Z" fill="url(#brassGrad)" stroke="#FFD54F" stroke-width="1.5"/>
+  <ellipse cx="50" cy="55" rx="32" ry="7" fill="#6B0F1A"/>
+  <!-- Oil Rim -->
+  <ellipse cx="50" cy="56" rx="28" ry="4" fill="#FF8F00" opacity="0.6"/>
+  <!-- Diya Stand Pedestal -->
+  <path d="M42 78 H58 V85 H42 Z" fill="url(#brassGrad)"/>
+  <ellipse cx="50" cy="88" rx="22" ry="5" fill="url(#brassGrad)"/>
+  <!-- Wick & Flame -->
+  <path d="M50 56 Q48 45 50 36" stroke="#424242" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Outer Flame -->
+  <path d="M50 12 C42 26 40 38 46 46 C50 50 50 50 54 46 C60 38 58 26 50 12 Z" fill="#FF5722"/>
+  <!-- Mid Flame -->
+  <path d="M50 20 C45 30 44 38 48 44 C50 47 50 47 52 44 C56 38 55 30 50 20 Z" fill="#FFEB3B"/>
+  <!-- Core White Light -->
+  <path d="M50 28 C47 34 46 39 49 43 C50 44 50 44 51 43 C54 39 53 34 50 28 Z" fill="#FFFFFF"/>
+</svg>

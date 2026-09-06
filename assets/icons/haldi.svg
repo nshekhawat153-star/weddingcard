@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Haldi Bowl with Turmeric & Marigolds -->
+  <defs>
+    <linearGradient id="brassBowl" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFE082"/>
+      <stop offset="50%" stop-color="#FFB300"/>
+      <stop offset="100%" stop-color="#FF8F00"/>
+    </linearGradient>
+    <radialGradient id="haldiPaste" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFF176"/>
+      <stop offset="60%" stop-color="#FDD835"/>
+      <stop offset="100%" stop-color="#FBC02D"/>
+    </radialGradient>
+  </defs>
+  <!-- Base Stand -->
+  <ellipse cx="50" cy="85" rx="18" ry="4" fill="url(#brassBowl)"/>
+  <!-- Urli / Bowl -->
+  <path d="M14 48 C14 74 30 84 50 84 C70 84 86 74 86 48 Z" fill="url(#brassBowl)" stroke="#E65100" stroke-width="1.5"/>
+  <ellipse cx="50" cy="48" rx="36" ry="12" fill="url(#brassBowl)"/>
+  <!-- Haldi Paste Inside -->
+  <ellipse cx="50" cy="49" rx="32" ry="9" fill="url(#haldiPaste)"/>
+  <!-- Decorative Genda Phool on Rim -->
+  <circle cx="28" cy="44" r="7" fill="#FF9800"/>
+  <circle cx="28" cy="44" r="3" fill="#E65100"/>
+  <circle cx="72" cy="44" r="7" fill="#FF9800"/>
+  <circle cx="72" cy="44" r="3" fill="#E65100"/>
+  <circle cx="50" cy="42" r="8" fill="#FFB300"/>
+  <circle cx="50" cy="42" r="3.5" fill="#E65100"/>
+  <!-- Floating Sparkles -->
+  <circle cx="34" cy="24" r="2" fill="#FBC02D"/>
+  <circle cx="66" cy="20" r="2.5" fill="#FBC02D"/>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" fill="none">
+  <!-- Royal Wedding Doli / Palanquin -->
+  <defs>
+    <linearGradient id="goldGradDoli" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEAA7"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#AA771C"/>
+    </linearGradient>
+  </defs>
+  <!-- Carrying Poles -->
+  <line x1="5" y1="36" x2="115" y2="36" stroke="url(#goldGradDoli)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Curved Doli Dome / Canopy -->
+  <path d="M35 36 C35 15 85 15 85 36 Z" fill="url(#goldGradDoli)" stroke="#8B0000" stroke-width="1.5"/>
+  <circle cx="60" cy="13" r="3" fill="#FFEAA7"/>
+  <path d="M60 8 L60 13" stroke="url(#goldGradDoli)" stroke-width="2"/>
+  <!-- Doli Body Structure -->
+  <rect x="38" y="36" width="44" height="26" rx="4" fill="#6B0F1A" stroke="url(#goldGradDoli)" stroke-width="2"/>
+  <!-- Curtains & Window Jali -->
+  <rect x="46" y="40" width="28" height="18" rx="2" fill="#8B0000" stroke="url(#goldGradDoli)" stroke-width="1"/>
+  <path d="M46 40 Q60 52 74 40 V42 Q60 55 46 42 Z" fill="url(#goldGradDoli)"/>
+  <!-- Hanging Pearls / Latkan Tassels -->
+  <circle cx="42" cy="65" r="1.5" fill="url(#goldGradDoli)"/>
+  <circle cx="50" cy="65" r="1.5" fill="url(#goldGradDoli)"/>
+  <circle cx="60" cy="65" r="1.5" fill="url(#goldGradDoli)"/>
+  <circle cx="70" cy="65" r="1.5" fill="url(#goldGradDoli)"/>
+  <circle cx="78" cy="65" r="1.5" fill="url(#goldGradDoli)"/>
+  <!-- Base Trim -->
+  <line x1="36" y1="62" x2="84" y2="62" stroke="url(#goldGradDoli)" stroke-width="2"/>
+</svg>

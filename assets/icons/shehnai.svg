@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Royal Shehnai & Musical Notes -->
+  <defs>
+    <linearGradient id="goldShehnai" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3A8"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+  </defs>
+  <!-- Shehnai 1 (Angled) -->
+  <path d="M20 20 L28 24 L68 64 C72 68 76 74 82 72 C88 70 85 82 80 84 C72 86 66 78 62 70 L24 28 Z" fill="url(#goldShehnai)" stroke="#6B0F1A" stroke-width="1.5"/>
+  <!-- Finger Holes -->
+  <circle cx="38" cy="40" r="2" fill="#450911"/>
+  <circle cx="46" cy="48" r="2" fill="#450911"/>
+  <circle cx="54" cy="56" r="2" fill="#450911"/>
+  <circle cx="62" cy="64" r="2" fill="#450911"/>
+  <!-- Floral Ribbon Garland Wrapped around -->
+  <path d="M30 32 Q45 25 50 45" stroke="#E53935" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M48 50 Q63 43 68 63" stroke="#E53935" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Bell Flare -->
+  <ellipse cx="80" cy="80" rx="9" ry="5" transform="rotate(-45 80 80)" fill="#FFEAA7" stroke="url(#goldShehnai)" stroke-width="2"/>
+  <!-- Musical Floating Notes -->
+  <path d="M75 25 C75 20 85 15 90 20 V35" stroke="url(#goldShehnai)" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="72" cy="27" r="3" fill="url(#goldShehnai)"/>
+  <circle cx="87" cy="37" r="3" fill="url(#goldShehnai)"/>
+</svg>

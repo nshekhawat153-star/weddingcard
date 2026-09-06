@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Sacred Kalash with Coconut and Mango Leaves -->
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFF3A8"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#996515"/>
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+  </defs>
+  <!-- Base Stand -->
+  <ellipse cx="50" cy="88" rx="20" ry="5" fill="url(#goldGrad)" opacity="0.8"/>
+  <path d="M35 88 H65 V82 H35 Z" fill="url(#goldGrad)"/>
+  <!-- Pot Body -->
+  <path d="M32 82 C22 72 22 55 35 44 H65 C78 55 78 72 68 82 Z" fill="url(#goldGrad)"/>
+  <ellipse cx="50" cy="44" rx="16" ry="4" fill="url(#goldGrad)"/>
+  <!-- Swastik / Om Motif on Kalash -->
+  <path d="M47 56 H53 M50 53 V69 M50 53 H53 V50 M50 69 H47 V72 M47 61 V56 H44 M53 61 V69 H56" stroke="#8B0000" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Neck Band -->
+  <rect x="36" y="42" width="28" height="4" rx="2" fill="#8B0000"/>
+  <!-- Mango Leaves -->
+  <path d="M36 44 C26 36 24 20 28 14 C36 22 38 34 38 42 Z" fill="url(#leafGrad)"/>
+  <path d="M64 44 C74 36 76 20 72 14 C64 22 62 34 62 42 Z" fill="url(#leafGrad)"/>
+  <path d="M42 42 C36 30 38 16 44 10 C48 18 48 30 46 42 Z" fill="url(#leafGrad)"/>
+  <path d="M58 42 C64 30 62 16 56 10 C52 18 52 30 54 42 Z" fill="url(#leafGrad)"/>
+  <!-- Coconut on Top -->
+  <ellipse cx="50" cy="22" rx="12" ry="15" fill="#5D4037"/>
+  <path d="M50 7 C49 14 51 14 50 20" stroke="#3E2723" stroke-width="2" stroke-linecap="round"/>
+  <!-- Tilak on Coconut -->
+  <path d="M47 18 Q50 25 53 18" stroke="#D32F2F" stroke-width="2.5" fill="none"/>
+  <circle cx="50" cy="20" r="1.5" fill="#FFEB3B"/>
+</svg>

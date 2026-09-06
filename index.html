@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>City 2 – Indian Wedding Invitation Website Template | Abhishek & Kanika</title>
+  <meta name="description" content="Create a beautiful wedding invite that opens as a website. Edit anytime and share instantly on WhatsApp. Modern, simple, and made for every ceremony.">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Abhishek Weds Kanika – Wedding Invitation">
+  <meta property="og:description" content="We invite you to join us in our wedding celebrations in Jaipur. Tap to view our wedding website!">
+  <meta property="og:image" content="assets/images/gallery/photo_1.jpeg">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/ganesha.png">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Floating Audio Control Button -->
+  <div class="audio-control-fixed" id="audio-container">
+    <audio id="bg-soundtrack" src="assets/audio/wedding_soundtrack.mp3" loop preload="metadata"></audio>
+    <button class="audio-toggle-btn" id="audio-toggle-btn" aria-label="Toggle background music">
+      <svg class="audio-icon-svg" id="audio-icon-muted" viewBox="0 0 24 24" style="display: none;">
+        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+      </svg>
+      <svg class="audio-icon-svg" id="audio-icon-playing" viewBox="0 0 24 24">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+      <div class="equalizer-bars" id="equalizer-bars">
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+        <div class="eq-bar"></div>
+      </div>
+    </button>
+  </div>
+
+  <div class="site-wrapper">
+    <main class="main-content">
+
+      <!-- ====================================================================
+           SECTION 1: HERO (Royal Palace Sky, Animated Vintage Car & Titles)
+           ==================================================================== -->
+      <section class="hero-section" id="hero">
+        <picture class="hero-sky-bg">
+          <source media="(min-width: 810px)" srcset="assets/images/hero/sky_palace_desktop.png">
+          <img src="assets/images/hero/sky_palace_mobile.png" alt="Royal Palace Skyline" class="hero-sky-bg">
+        </picture>
+
+        <!-- Dynamic Animated Titles -->
+        <div class="hero-titles-container">
+          <h3 class="hero-title-name title-abhishek">ABHISHEK</h3>
+          <h2 class="hero-title-weds title-weds">WEDS</h2>
+          <h3 class="hero-title-name title-kanika">KANIKA</h3>
+        </div>
+
+        <!-- Animated Open-Top Vintage Car -->
+        <div class="hero-car-wrapper">
+          <picture>
+            <img src="assets/images/hero/vintage_car.png" alt="Vintage Wedding Car" class="hero-vintage-car car-animated-mobile car-animated-desktop">
+          </picture>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 2: BLESSINGS & INVITATION INVOCATION
+           ==================================================================== -->
+      <section class="blessings-section appear-element" id="blessings">
+        <div class="ganesha-wrapper">
+          <img src="assets/images/ganesha.png" alt="Lord Ganesha" class="ganesha-img">
+        </div>
+
+        <p class="ganesha-mantra font-devanagari">ॐ श्री गणेशाय नम</p>
+
+        <div class="blessings-content">
+          <p class="blessing-label">With the heavenly blessings of</p>
+          <h4 class="blessing-names">Smt. Lata Devi &amp; Sm. Kamal Kapoor</h4>
+          
+          <div class="blessing-divider"></div>
+          
+          <h4 class="blessing-names">Mrs. Reena &amp; Mr. Rajiv Kapoor</h4>
+          
+          <p class="invite-badge">INVITE</p>
+          <p class="invite-subtext">You to join us in the wedding celebrations of</p>
+          
+          <h2 class="couple-names-highlight">Abhishek &amp; Kanika</h2>
+          
+          <p class="parents-desc">Daughter of Mrs. Shalini &amp; Mr. Aakash Mittal,</p>
+          
+          <p class="events-lead-in">On the following events</p>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 3: CEREMONIES & EVENT CARDS (6 Cane Arch Cards with Large Flowers)
+           ==================================================================== -->
+      <section class="events-section" id="events">
+        <div class="events-grid">
+
+          <!-- 1. Mehendi -->
+          <article class="event-card appear-element" data-event="mehendi">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Mehendi</h3>
+                <p class="card-event-date">Friday, March 9th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">6pm Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Haldi -->
+          <article class="event-card appear-element" data-event="haldi">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Haldi</h3>
+                <p class="card-event-date">Friday, March 10th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">10am Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Cocktail -->
+          <article class="event-card appear-element" data-event="cocktail">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Cocktail</h3>
+                <p class="card-event-date">Friday, March 10th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">8pm Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Engagement -->
+          <article class="event-card appear-element" data-event="engagement">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Engagement</h3>
+                <p class="card-event-date">Friday, March 11th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">7pm Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Shaadi -->
+          <article class="event-card appear-element" data-event="shaadi">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Shaadi</h3>
+                <p class="card-event-date">Friday, March 12th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">7pm Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Reception -->
+          <article class="event-card appear-element" data-event="reception">
+            <div class="card-cane-wrapper">
+              <img src="assets/images/cards/cane_border.png" alt="Cane Arch Frame" class="card-cane-border">
+              <img src="assets/images/cards/flower_corner_top.png" alt="Floral Accent Top Right" class="card-flower-top">
+              <img src="assets/images/cards/flower_corner_bottom.png" alt="Floral Accent Bottom Center" class="card-flower-bottom">
+              <div class="card-inner-content">
+                <h3 class="card-event-name">Reception</h3>
+                <p class="card-event-date">Friday, March 17th 2026</p>
+                <p class="card-event-venue">Rambagh, Jaipur</p>
+                <p class="card-event-time">8pm Onwards</p>
+                <a href="https://maps.google.com/?q=Rambagh+Palace+Jaipur" target="_blank" rel="noopener noreferrer" class="card-map-btn">
+                  <span>See the route</span>
+                  <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           TRANSITION BREAKER 1: Vintage Car Separator
+           ==================================================================== -->
+      <div class="breaker-container appear-element">
+        <img src="assets/images/breakers/car_breaker_1.png" alt="Vintage Car Accent" class="breaker-image breaker-car">
+      </div>
+
+      <!-- ====================================================================
+           SECTION 4: MEET THE BRIDE AND GROOM (Photo Carousel)
+           ==================================================================== -->
+      <section class="couple-section appear-element" id="couple">
+        <div class="couple-heading">
+          <span class="heading-sub">meet the</span>
+          <h2 class="heading-main">bride and groom</h2>
+        </div>
+
+        <div class="carousel-frame-container">
+          <!-- Ornate Gold Arch Frame & Leaf Accent -->
+          <img src="assets/images/gallery/photo_frame.png" alt="Decorative Frame" class="carousel-ornate-frame">
+          <img src="assets/images/gallery/leaf_decor.png" alt="Botanical Leaf Ornament" class="carousel-leaf-decor">
+
+          <!-- Viewport containing the 6 Pre-wedding Photos -->
+          <div class="carousel-viewport">
+            <div class="gallery-slide active" data-index="0">
+              <img src="assets/images/gallery/photo_1.jpeg" alt="Abhishek & Kanika - Portrait 1">
+            </div>
+            <div class="gallery-slide" data-index="1">
+              <img src="assets/images/gallery/photo_2.jpeg" alt="Abhishek & Kanika - Portrait 2">
+            </div>
+            <div class="gallery-slide" data-index="2">
+              <img src="assets/images/gallery/photo_3.jpeg" alt="Abhishek & Kanika - Portrait 3">
+            </div>
+            <div class="gallery-slide" data-index="3">
+              <img src="assets/images/gallery/photo_4.jpeg" alt="Abhishek & Kanika - Portrait 4">
+            </div>
+            <div class="gallery-slide" data-index="4">
+              <img src="assets/images/gallery/photo_5.jpeg" alt="Abhishek & Kanika - Portrait 5">
+            </div>
+            <div class="gallery-slide" data-index="5">
+              <img src="assets/images/gallery/photo_6.jpeg" alt="Abhishek & Kanika - Portrait 6">
+            </div>
+          </div>
+
+          <!-- Navigation Controls -->
+          <button class="carousel-arrow prev-arrow" id="carousel-prev" aria-label="Previous Photo">
+            <img src="assets/images/gallery/arrow_prev.svg" alt="Previous">
+          </button>
+          <button class="carousel-arrow next-arrow" id="carousel-next" aria-label="Next Photo">
+            <img src="assets/images/gallery/arrow_next.svg" alt="Next">
+          </button>
+        </div>
+
+        <!-- Indicator Dots -->
+        <div class="carousel-indicators">
+          <span class="indicator-dot active" data-index="0"></span>
+          <span class="indicator-dot" data-index="1"></span>
+          <span class="indicator-dot" data-index="2"></span>
+          <span class="indicator-dot" data-index="3"></span>
+          <span class="indicator-dot" data-index="4"></span>
+          <span class="indicator-dot" data-index="5"></span>
+        </div>
+
+        <!-- Heartfelt Note from Couple -->
+        <p class="couple-personal-letter">
+          We are both so delighted that you are able to join us in celebrating what we hope will be one of the happiest days of our lives. The affection shown to us by so many people since our roka has been incredibly moving, and has touched us both deeply. We would like to take this opportunity to thank everyone most sincerely for their kindness. We are looking forward to see you at the wedding.
+        </p>
+      </section>
+
+      <!-- ====================================================================
+           TRANSITION BREAKER 2: Vintage Car Separator
+           ==================================================================== -->
+      <div class="breaker-container appear-element">
+        <img src="assets/images/breakers/car_breaker_2.png" alt="Vintage Car Accent" class="breaker-image breaker-car">
+      </div>
+
+      <!-- ====================================================================
+           SECTION 5: RSVP WHATSAPP CALL-TO-ACTION
+           ==================================================================== -->
+      <section class="rsvp-section appear-element" id="rsvp">
+        <a href="https://wa.me/?text=Hi%20Abhishek%20%26%20Kanika%2C%20I%20would%20love%20to%20attend%20your%20wedding!" target="_blank" rel="noopener noreferrer" class="action-card hover-lift">
+          <h3 class="action-card-title">Please RSVP</h3>
+          <div class="action-card-btn">
+            <span>Click to message on WhatsApp</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/>
+            </svg>
+          </div>
+        </a>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 6: THINGS TO KNOW (4 Informational Cards)
+           ==================================================================== -->
+      <section class="things-section appear-element" id="things-to-know">
+        <h2 class="things-heading">Things to know</h2>
+        <p class="things-subheading">
+          To help you feel at ease and enjoy every moment of the celebrations, we’ve gathered a few thoughtful details we’d love for you to know before the big day.
+        </p>
+
+        <div class="info-cards-grid">
+          <!-- 1. Hashtag -->
+          <div class="info-card hover-lift">
+            <img src="assets/images/info_icons/hashtag.png" alt="Hashtag Icon" class="info-icon-img">
+            <h4 class="info-card-title">Hashtag</h4>
+            <p class="info-card-desc">While posting photos on social media please use the hashtag - #abkan</p>
+          </div>
+
+          <!-- 2. Weather -->
+          <div class="info-card hover-lift">
+            <img src="assets/images/info_icons/weather.png" alt="Weather Icon" class="info-icon-img">
+            <h4 class="info-card-title">Weather</h4>
+            <p class="info-card-desc">It will be mostly sunny with temperature reaching up to 28 degrees at the venue</p>
+          </div>
+
+          <!-- 3. Staff -->
+          <div class="info-card hover-lift">
+            <img src="assets/images/info_icons/staff.png" alt="Staff Icon" class="info-icon-img">
+            <h4 class="info-card-title">Staff</h4>
+            <p class="info-card-desc">We recommend the nearby hotel called Bhola Bhawan near the venue for the staff members</p>
+          </div>
+
+          <!-- 4. Parking -->
+          <div class="info-card hover-lift">
+            <img src="assets/images/info_icons/parking.png" alt="Parking Icon" class="info-icon-img">
+            <h4 class="info-card-title">Parking</h4>
+            <p class="info-card-desc">Valet parking for all our guests will be available at the venue</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 7: INSTAGRAM SOCIAL ACTION
+           ==================================================================== -->
+      <section class="instagram-section appear-element" id="instagram">
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="action-card hover-lift">
+          <h3 class="action-card-title">Follow the action</h3>
+          <div class="action-card-btn">
+            <span>Click to open our Instagram page</span>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+          </div>
+        </a>
+      </section>
+
+      <!-- ====================================================================
+           SECTION 8: COUNTDOWN & SUNSET FOOTER (100% Matching Hero Architecture)
+           ==================================================================== -->
+      <section class="countdown-section appear-element" id="countdown">
+        <!-- Full-bleed Starry Palace Night Sky covering the whole section like in Hero -->
+        <picture class="footer-sky-bg">
+          <source media="(min-width: 810px)" srcset="assets/images/footer/footer_sky_desktop.png">
+          <img src="assets/images/footer/footer_sky_mobile.png" alt="Starry Palace Night Sky" class="footer-sky-bg">
+        </picture>
+
+        <!-- Countdown Header & Live Ticker overlaying the night sky -->
+        <div class="countdown-content-container">
+          <h2 class="countdown-title">The countdown begins</h2>
+
+          <div class="countdown-timer-display" aria-label="Countdown to wedding">
+            <div class="timer-block">
+              <span class="timer-number" id="countdown-days">00</span>
+              <span class="timer-label">Days</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-block">
+              <span class="timer-number" id="countdown-hours">00</span>
+              <span class="timer-label">Hours</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-block">
+              <span class="timer-number" id="countdown-mins">00</span>
+              <span class="timer-label">Mins</span>
+            </div>
+            <span class="timer-separator">:</span>
+            <div class="timer-block">
+              <span class="timer-number" id="countdown-secs">00</span>
+              <span class="timer-label">Secs</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Animated Open-Top Vintage Car in Night Palace Scene matching Hero -->
+        <div class="footer-car-wrapper" id="footer-car-wrapper">
+          <picture>
+            <img src="assets/images/footer/footer_car.png" alt="Silhouette Wedding Car" class="footer-vintage-car" id="footer-car-img">
+          </picture>
+        </div>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/music-player.js"></script>
+  <script src="js/photo-carousel.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/appear-animations.js"></script>
+</body>
+</html>

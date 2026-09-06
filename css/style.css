@@ -1,0 +1,897 @@
+/* Style Sheet for Missing Piece City 2 Indian Wedding Invitation */
+@import url('typography.css');
+@import url('animations.css');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--color-sky-blue);
+  color: #2c2c2c;
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+/* Base Wrapper & Page Container */
+.site-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-sky-blue);
+}
+
+.main-content {
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+/* Floating Audio Toggle Button */
+.audio-control-fixed {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 1000;
+}
+
+.audio-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--color-orange);
+  color: #ffffff;
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  border-radius: 40px;
+  cursor: pointer;
+  box-shadow: 0 4px 18px rgba(248, 104, 0, 0.4);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  user-select: none;
+}
+
+.audio-toggle-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 22px rgba(248, 104, 0, 0.6);
+  background: #ff7518;
+}
+
+.audio-icon-svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.equalizer-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  height: 14px;
+}
+
+.eq-bar {
+  width: 3px;
+  height: 4px;
+  background: #ffffff;
+  border-radius: 2px;
+  transition: height 0.2s ease;
+}
+
+/* ==========================================================================
+   SECTION 1: HERO (Sky, Royal Palace & Vintage Car with Spring Motion)
+   ========================================================================== */
+.hero-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--color-sky-blue);
+  background-size: cover;
+  background-position: center bottom;
+  padding: 80px 20px 0;
+}
+
+.hero-sky-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-titles-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.hero-title-name {
+  font-family: var(--font-hero);
+  font-size: 80px;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+}
+
+.hero-title-weds {
+  font-family: var(--font-hero);
+  font-size: 32px;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  margin: 6px 0;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.hero-car-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: -10px;
+}
+
+.hero-vintage-car {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   SECTION 2: BLESSINGS & INVITATION INVOCATION
+   ========================================================================== */
+.blessings-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  background: var(--color-sky-blue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+  text-align: center;
+}
+
+.ganesha-wrapper {
+  margin-bottom: 24px;
+}
+
+.ganesha-img {
+  width: 80px;
+  height: auto;
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.15));
+}
+
+.ganesha-mantra {
+  font-family: var(--font-devanagari);
+  font-size: 18px;
+  color: var(--color-cream);
+  letter-spacing: 0.04em;
+  margin-bottom: 30px;
+}
+
+.blessings-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  color: var(--color-cream);
+}
+
+.blessing-label {
+  font-size: 14px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.blessing-names {
+  font-family: var(--font-serif-upright);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.blessing-divider {
+  width: 40px;
+  height: 1px;
+  background: var(--color-gold-border);
+  margin: 8px 0;
+}
+
+.invite-badge {
+  font-size: 15px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px 0 4px;
+}
+
+.invite-subtext {
+  font-size: 15px;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.couple-names-highlight {
+  font-family: var(--font-serif-upright);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--color-cream);
+  margin: 8px 0;
+}
+
+.parents-desc {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.events-lead-in {
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-top: 24px;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   SECTION 3: CEREMONIES & EVENT CARDS (Authentic Framer Cane Arch & Big Flowers)
+   ========================================================================== */
+.events-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 60px;
+  overflow: visible;
+}
+
+.events-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 60px 40px;
+  max-width: 1200px;
+  width: 100%;
+  overflow: visible;
+}
+
+.event-card {
+  position: relative;
+  width: 335px;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  text-align: center;
+  background: transparent;
+  overflow: visible;
+  transition: transform 0.35s var(--smooth-ease);
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Cane Wicker Arched Frame */
+.card-cane-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 472px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 30px 40px;
+  overflow: visible;
+}
+
+.card-cane-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  z-index: 1;
+  border-radius: 180px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+/* 100% Matching Large Botanical Flowers (Top-Right & Bottom-Center) */
+.card-flower-top {
+  position: absolute;
+  top: -55px;
+  right: -42px;
+  width: 198px;
+  height: auto;
+  z-index: 15;
+  pointer-events: none;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.28));
+  transition: transform 0.4s var(--smooth-ease);
+}
+
+.card-flower-bottom {
+  position: absolute;
+  bottom: -45px;
+  left: 50%;
+  transform: translateX(-20%);
+  width: 162px;
+  height: auto;
+  z-index: 15;
+  pointer-events: none;
+  filter: drop-shadow(0 8px 18px rgba(0, 0, 0, 0.25));
+  transition: transform 0.4s var(--smooth-ease);
+}
+
+.event-card:hover .card-flower-top {
+  transform: scale(1.08) rotate(4deg);
+}
+
+.event-card:hover .card-flower-bottom {
+  transform: translateX(-20%) scale(1.08) rotate(-4deg);
+}
+
+.card-inner-content {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.card-event-name {
+  font-family: var(--font-hero);
+  font-size: 42px;
+  font-weight: 500;
+  color: var(--color-teal);
+  letter-spacing: 0.02em;
+  margin-bottom: 6px;
+}
+
+.card-event-date,
+.card-event-venue,
+.card-event-time {
+  font-family: var(--font-hero);
+  font-size: 18px;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.card-map-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 14px;
+  padding: 9px 20px;
+  background: transparent;
+  color: var(--color-teal);
+  border: 1.5px solid var(--color-teal);
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+}
+
+.card-map-btn:hover {
+  background: var(--color-teal);
+  color: #ffffff;
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(69, 160, 134, 0.4);
+}
+
+.card-map-btn svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+/* ==========================================================================
+   TRANSITION BREAKERS (Vintage Car Separator)
+   ========================================================================== */
+.breaker-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  position: relative;
+  z-index: 6;
+}
+
+.breaker-image {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+}
+
+/* ==========================================================================
+   SECTION 4: MEET THE BRIDE AND GROOM (Photo Carousel)
+   ========================================================================== */
+.couple-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.couple-heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 40px;
+}
+
+.heading-sub {
+  font-family: var(--font-devanagari);
+  font-size: 24px;
+  color: var(--color-cream);
+  letter-spacing: 0.05em;
+  text-transform: lowercase;
+}
+
+.heading-main {
+  font-family: var(--font-serif-upright);
+  font-size: 52px;
+  font-weight: 600;
+  color: var(--color-cream);
+  line-height: 1.1;
+  text-transform: lowercase;
+}
+
+.carousel-frame-container {
+  position: relative;
+  width: 340px;
+  height: 480px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-ornate-frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.carousel-leaf-decor {
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  width: 110px;
+  height: auto;
+  z-index: 4;
+  pointer-events: none;
+  filter: drop-shadow(0 4px 12px rgba(0,0,0,0.2));
+}
+
+.carousel-viewport {
+  position: relative;
+  width: 270px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 120px 120px 16px 16px;
+  z-index: 2;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.88);
+  border: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  transition: background 0.2s, transform 0.2s;
+}
+
+.carousel-arrow:hover {
+  background: #ffffff;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-arrow.prev-arrow {
+  left: -24px;
+}
+
+.carousel-arrow.next-arrow {
+  right: -24px;
+}
+
+.carousel-arrow img {
+  width: 18px;
+  height: 18px;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(243, 236, 186, 0.4);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.indicator-dot.active {
+  background: var(--color-cream);
+  width: 22px;
+  border-radius: 10px;
+}
+
+.couple-personal-letter {
+  max-width: 680px;
+  font-family: var(--font-serif-upright);
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--color-cream);
+  margin-top: 30px;
+  padding: 0 20px;
+  text-align: center;
+  font-style: normal;
+}
+
+/* ==========================================================================
+   SECTION 5: RSVP WHATSAPP CALL-TO-ACTION
+   ========================================================================== */
+.rsvp-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.action-card {
+  width: 100%;
+  max-width: 440px;
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-gold-border);
+  border-radius: 24px;
+  padding: 34px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: transform 0.3s var(--smooth-ease), background 0.3s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.action-card-title {
+  font-family: var(--font-serif-upright);
+  font-size: 38px;
+  color: var(--color-cream);
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.action-card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--color-orange);
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  font-size: 15px;
+  box-shadow: 0 4px 20px rgba(248, 104, 0, 0.35);
+  transition: all 0.25s ease;
+}
+
+.action-card-btn:hover {
+  transform: scale(1.04);
+  box-shadow: 0 6px 25px rgba(248, 104, 0, 0.55);
+}
+
+/* ==========================================================================
+   SECTION 6: THINGS TO KNOW (4 Informational Cards)
+   ========================================================================== */
+.things-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.things-heading {
+  font-family: var(--font-serif-upright);
+  font-size: 46px;
+  color: var(--color-cream);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.things-subheading {
+  max-width: 580px;
+  font-size: 15px;
+  color: var(--color-cream);
+  opacity: 0.9;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.info-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 760px;
+  width: 100%;
+}
+
+.info-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid var(--color-gold-border);
+  border-radius: 20px;
+  padding: 30px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-4px);
+}
+
+.info-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+.info-card-title {
+  font-family: var(--font-serif-upright);
+  font-size: 26px;
+  color: var(--color-cream);
+  font-weight: 600;
+}
+
+.info-card-desc {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+/* ==========================================================================
+   SECTION 7: INSTAGRAM SOCIAL CTA
+   ========================================================================== */
+.instagram-section {
+  position: relative;
+  z-index: 6;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 30px 20px 60px;
+}
+
+/* ==========================================================================
+   SECTION 8: COUNTDOWN & SUNSET FOOTER (100% Matching Hero Architecture)
+   ========================================================================== */
+.countdown-section {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: var(--color-sky-blue);
+  background-size: cover;
+  background-position: center bottom;
+  padding: 80px 20px 0;
+}
+
+/* Full-bleed sky background matching Hero */
+.footer-sky-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.countdown-content-container {
+  position: relative;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+  gap: 16px;
+}
+
+.countdown-title {
+  font-family: var(--font-serif-upright);
+  font-size: 48px;
+  color: var(--color-cream);
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.countdown-timer-display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.timer-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.timer-number {
+  font-family: var(--font-serif-upright);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--color-cream);
+  line-height: 1;
+  min-width: 60px;
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.4);
+}
+
+.timer-label {
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--color-cream);
+  opacity: 0.85;
+  margin-top: 6px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+.timer-separator {
+  font-family: var(--font-serif-upright);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-cream);
+  opacity: 0.75;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
+}
+
+/* Footer Car Container matching Hero */
+.footer-car-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: -10px;
+}
+
+/* Footer Car with Driving Spring Motion matching Hero */
+.footer-vintage-car {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  max-width: 850px;
+  height: auto;
+  display: block;
+  pointer-events: none;
+  transform: translateX(-50%) translate3d(360px, -80px, 0) scale(0.43);
+  opacity: 0.2;
+  will-change: transform, opacity;
+  transition: transform 2.4s cubic-bezier(0.18, 0.89, 0.32, 1), opacity 1.6s ease;
+}
+
+.footer-vintage-car.car-animated-in {
+  transform: translateX(-50%) translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+}

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+  <!-- Mehndi / Henna Pattern Hand -->
+  <defs>
+    <linearGradient id="hennaGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#81C784"/>
+      <stop offset="50%" stop-color="#2E7D32"/>
+      <stop offset="100%" stop-color="#1B5E20"/>
+    </linearGradient>
+  </defs>
+  <!-- Hand Silhouette Outline with Henna Tattoos -->
+  <path d="M26 88 C26 78 28 65 30 52 L31 32 C31 29 34 29 35 32 L36 50 L38 22 C38 19 41 19 42 22 L43 50 L46 25 C46 22 49 22 50 25 L50 52 L54 36 C54 33 57 33 58 36 L58 58 C62 55 68 50 72 54 C76 58 72 66 68 70 L62 76 C60 82 58 88 56 88 Z" stroke="url(#hennaGreen)" stroke-width="2" fill="#E8F5E9" fill-opacity="0.2"/>
+  <!-- Henna Mandala on Palm -->
+  <circle cx="44" cy="62" r="7" stroke="url(#hennaGreen)" stroke-width="1.5" stroke-dasharray="2 2"/>
+  <circle cx="44" cy="62" r="3" fill="url(#hennaGreen)"/>
+  <path d="M44 51 L44 54 M44 70 L44 73 M33 62 L36 62 M52 62 L55 62" stroke="url(#hennaGreen)" stroke-width="1.5"/>
+  <!-- Finger Tips Henna Cap -->
+  <path d="M31 32 C31 29 35 29 35 32 V36 H31 Z" fill="url(#hennaGreen)"/>
+  <path d="M38 22 C38 19 42 19 42 22 V27 H38 Z" fill="url(#hennaGreen)"/>
+  <path d="M46 25 C46 22 50 22 50 25 V30 H46 Z" fill="url(#hennaGreen)"/>
+  <path d="M54 36 C54 33 58 33 58 36 V41 H54 Z" fill="url(#hennaGreen)"/>
+</svg>

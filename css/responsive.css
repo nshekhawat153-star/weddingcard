@@ -1,0 +1,286 @@
+/* Responsive Design Styles matching City 2 Breakpoints */
+
+/* ==========================================================================
+   TABLET BREAKPOINT: 810px to 1199.98px
+   ========================================================================== */
+@media (min-width: 810px) and (max-width: 1199.98px) {
+  .hero-title-name {
+    font-size: 72px;
+  }
+  .hero-title-weds {
+    font-size: 28px;
+  }
+  .events-grid {
+    gap: 50px 30px;
+    padding: 0 30px;
+  }
+  .event-card {
+    width: 300px;
+    min-height: 440px;
+  }
+  .card-cane-wrapper {
+    min-height: 420px;
+  }
+  .card-flower-top {
+    width: 140px;
+    top: -30px;
+    right: -25px;
+  }
+  .card-flower-bottom {
+    width: 125px;
+    bottom: -30px;
+  }
+  .carousel-frame-container {
+    width: 380px;
+    height: 520px;
+  }
+  .carousel-viewport {
+    width: 310px;
+    height: 440px;
+  }
+
+  .countdown-section {
+    min-height: 90vh;
+    padding-top: 80px;
+  }
+  .footer-car-wrapper {
+    max-width: 800px;
+  }
+}
+
+/* ==========================================================================
+   DESKTOP BREAKPOINT: 1200px and up
+   ========================================================================== */
+@media (min-width: 1200px) {
+  body {
+    background-color: var(--color-sky-blue);
+  }
+
+  .site-wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+
+  .hero-section {
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+
+  .hero-title-name {
+    font-size: 100px;
+    line-height: 60px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-title-weds {
+    font-size: 34px;
+    margin: 12px 0;
+  }
+
+  .hero-car-wrapper {
+    max-width: 1050px;
+  }
+
+  .events-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 40px;
+    max-width: 1200px;
+  }
+
+  .event-card {
+    width: 360px;
+    min-height: 480px;
+  }
+
+  .card-cane-wrapper {
+    min-height: 460px;
+  }
+
+  .card-flower-top {
+    width: 165px;
+    top: -40px;
+    right: -35px;
+  }
+
+  .card-flower-bottom {
+    width: 140px;
+    bottom: -35px;
+  }
+
+  .carousel-frame-container {
+    width: 420px;
+    height: 580px;
+  }
+
+  .carousel-viewport {
+    width: 340px;
+    height: 480px;
+  }
+
+  .info-cards-grid {
+    max-width: 800px;
+    gap: 30px;
+  }
+
+  /* Countdown Section Desktop matching Hero */
+  .countdown-section {
+    min-height: 100vh;
+    padding-top: 100px;
+  }
+
+  .countdown-title {
+    font-size: 56px;
+  }
+
+  .timer-number {
+    font-size: 54px;
+    min-width: 70px;
+  }
+
+  .footer-car-wrapper {
+    max-width: 1050px;
+  }
+
+  .footer-vintage-car {
+    transform: translateX(-50%) translate3d(560px, -100px, 0) scale(0.18);
+  }
+
+  .footer-vintage-car.car-animated-in {
+    transform: translateX(-50%) translate3d(0, 0, 0) scale(1);
+  }
+}
+
+/* ==========================================================================
+   MOBILE / PHONE BREAKPOINT: up to 809.98px
+   ========================================================================== */
+@media (max-width: 809.98px) {
+  .hero-section {
+    padding-top: 60px;
+    min-height: 85vh;
+  }
+
+  .hero-title-name {
+    font-size: 56px;
+    letter-spacing: 0.02em;
+  }
+
+  .hero-title-weds {
+    font-size: 24px;
+  }
+
+  .blessing-names {
+    font-size: 24px;
+  }
+
+  .couple-names-highlight {
+    font-size: 36px;
+  }
+
+  .events-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .event-card {
+    width: 335px;
+    min-height: 480px;
+  }
+
+  .card-cane-wrapper {
+    width: 328px;
+    min-height: 440px;
+    padding: 44px 24px 34px;
+  }
+
+  .card-flower-top {
+    width: 198px;
+    top: -55px;
+    right: -42px;
+  }
+
+  .card-flower-bottom {
+    width: 162px;
+    bottom: -45px;
+  }
+
+  .card-event-name {
+    font-size: 38px;
+  }
+
+  .heading-main {
+    font-size: 42px;
+  }
+
+  .carousel-frame-container {
+    width: 300px;
+    height: 430px;
+  }
+
+  .carousel-viewport {
+    width: 240px;
+    height: 350px;
+  }
+
+  .carousel-arrow.prev-arrow {
+    left: -16px;
+  }
+
+  .carousel-arrow.next-arrow {
+    right: -16px;
+  }
+
+  .couple-personal-letter {
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .info-cards-grid {
+    grid-template-columns: 1fr;
+    max-width: 360px;
+    gap: 20px;
+  }
+
+  .action-card {
+    max-width: 340px;
+    padding: 28px 18px;
+  }
+
+  /* Countdown Section Mobile matching Hero */
+  .countdown-section {
+    min-height: 85vh;
+    padding: 50px 16px 0;
+  }
+
+  .countdown-title {
+    font-size: 38px;
+  }
+
+  .timer-number {
+    font-size: 36px;
+    min-width: 44px;
+  }
+
+  .timer-separator {
+    font-size: 28px;
+  }
+
+  .footer-vintage-car {
+    transform: translateX(-50%) translate3d(320px, -60px, 0) scale(0.43);
+  }
+
+  .footer-vintage-car.car-animated-in {
+    transform: translateX(-50%) translate3d(0, 0, 0) scale(1);
+  }
+
+  .audio-control-fixed {
+    top: 16px;
+    right: 16px;
+  }
+}
