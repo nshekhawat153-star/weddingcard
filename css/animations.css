@@ -10,11 +10,12 @@
 /* 1. Hero Car Spring Entry Animation */
 @keyframes carDriveInDesktop {
   0% {
-    opacity: 0.2;
-    transform: translateX(-50%) translate3d(-920px, 340px, 0) scale(2);
+    opacity: 0;
+    transform: translateX(-50%) translate3d(-750px, 0, 0) scale(1.05);
   }
-  60% {
-    transform: translateX(-50%) translate3d(20px, -10px, 0) scale(1.02);
+  70% {
+    opacity: 1;
+    transform: translateX(-50%) translate3d(15px, 0, 0) scale(1.01);
   }
   100% {
     opacity: 1;
@@ -24,11 +25,12 @@
 
 @keyframes carDriveInMobile {
   0% {
-    opacity: 0.2;
-    transform: translateX(-50%) translate3d(-660px, 250px, 0) scale(1.9);
+    opacity: 0;
+    transform: translateX(-50%) translate3d(-480px, 0, 0) scale(1.05);
   }
-  65% {
-    transform: translateX(-50%) translate3d(15px, -8px, 0) scale(1.02);
+  70% {
+    opacity: 1;
+    transform: translateX(-50%) translate3d(10px, 0, 0) scale(1.01);
   }
   100% {
     opacity: 1;
@@ -39,11 +41,13 @@
 .car-animated-desktop {
   animation: carDriveInDesktop 2.4s var(--smooth-ease) forwards;
   will-change: transform, opacity;
+  transform-origin: bottom center;
 }
 
 .car-animated-mobile {
   animation: carDriveInMobile 2.2s var(--smooth-ease) forwards;
   will-change: transform, opacity;
+  transform-origin: bottom center;
 }
 
 /* 2. Hero Titles Spring Reveal (Abhishek Weds Kanika) */
@@ -147,18 +151,33 @@
   transform: translateY(0);
 }
 
-/* 5. Breaker Floating Vintage Car subtle hover/drift */
-@keyframes subtleDrift {
-  0%, 100% {
-    transform: translateY(0) rotate(0);
+/* 5. Breaker Vintage Car Drive Forward (Back-to-Front Zoom) Animation */
+@keyframes carZoomForward {
+  0% {
+    opacity: 0;
+    transform: scale(0.18) translateY(-40px);
   }
-  50% {
-    transform: translateY(-6px) rotate(0.4deg);
+  65% {
+    opacity: 1;
+    transform: scale(1.06) translateY(0);
+  }
+  85% {
+    transform: scale(0.97) translateY(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
   }
 }
 
-.breaker-car {
-  animation: subtleDrift 6s ease-in-out infinite;
+.breaker-image {
+  opacity: 0;
+  transform: scale(0.18);
+  will-change: transform, opacity;
+}
+
+.appear-element.is-visible .breaker-image {
+  animation: carZoomForward 1.4s var(--spring-ease) forwards;
 }
 
 /* 6. Photo Gallery Slider Transitions */
