@@ -31,12 +31,11 @@
     bottom: -30px;
   }
   .carousel-frame-container {
-    width: 380px;
-    height: 520px;
+    width: 400px;
+    height: 560px;
   }
   .carousel-viewport {
-    width: 310px;
-    height: 440px;
+    border-radius: 75px 75px 20px 20px;
   }
 
   .countdown-section {
@@ -52,10 +51,6 @@
    DESKTOP BREAKPOINT: 1200px and up
    ========================================================================== */
 @media (min-width: 1200px) {
-  body {
-    background-color: var(--color-sky-blue);
-  }
-
   .site-wrapper {
     max-width: 100%;
     margin: 0 auto;
@@ -113,13 +108,12 @@
   }
 
   .carousel-frame-container {
-    width: 420px;
-    height: 580px;
+    width: 450px;
+    height: 630px;
   }
 
   .carousel-viewport {
-    width: 340px;
-    height: 480px;
+    border-radius: 85px 85px 22px 22px;
   }
 
   .info-cards-grid {
@@ -218,13 +212,12 @@
   }
 
   .carousel-frame-container {
-    width: 300px;
-    height: 430px;
+    width: 335px;
+    height: 470px;
   }
 
   .carousel-viewport {
-    width: 240px;
-    height: 350px;
+    border-radius: 65px 65px 18px 18px;
   }
 
   .carousel-arrow.prev-arrow {
