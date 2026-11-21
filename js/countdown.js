@@ -11,14 +11,13 @@
 
   if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
 
-  // Wedding Date: March 12 (or upcoming ceremony)
-  // Set to a future target to ensure the live ticking effect is beautifully demonstrable
-  let targetDate = new Date("2026-11-28T19:00:00+05:30").getTime();
+  // Wedding Date: Saturday, 5 December 2026 (Pritibhoj 8:15 PM)
+  let targetDate = new Date("2026-12-05T20:15:00+05:30").getTime();
   const now = new Date().getTime();
 
-  // If the target has passed, set target to 90 days from now so the live counter is always actively ticking
+  // Fallback if the target date has passed
   if (targetDate <= now) {
-    targetDate = now + (78 * 24 * 60 * 60 * 1000) + (14 * 60 * 60 * 1000) + (35 * 60 * 1000);
+    targetDate = now + (14 * 24 * 60 * 60 * 1000) + (8 * 60 * 60 * 1000);
   }
 
   function pad(num) {

@@ -1,41 +1,42 @@
-/* Responsive Design Styles matching City 2 Breakpoints */
+/* Responsive Design Styles matching City 2 Breakpoints - Muskan & Aman */
 
 /* ==========================================================================
    TABLET BREAKPOINT: 810px to 1199.98px
    ========================================================================== */
 @media (min-width: 810px) and (max-width: 1199.98px) {
   .hero-title-name {
-    font-size: 72px;
+    font-size: 78px;
   }
   .hero-title-weds {
-    font-size: 28px;
+    font-size: 30px;
   }
   .events-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 50px 30px;
     padding: 0 30px;
   }
   .event-card {
-    width: 300px;
-    min-height: 440px;
+    width: 320px;
+    min-height: 460px;
   }
   .card-cane-wrapper {
-    min-height: 420px;
+    min-height: 440px;
   }
   .card-flower-top {
-    width: 140px;
-    top: -30px;
-    right: -25px;
+    width: 150px;
+    top: -35px;
+    right: -30px;
   }
   .card-flower-bottom {
-    width: 125px;
-    bottom: -30px;
+    width: 145px;
+    bottom: -35px;
+    left: -30px;
   }
-  .carousel-frame-container {
-    width: 400px;
-    height: 560px;
-  }
-  .carousel-viewport {
-    border-radius: 75px 75px 20px 20px;
+  .family-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
   }
 
   .countdown-section {
@@ -66,14 +67,13 @@
   }
 
   .hero-title-name {
-    font-size: 100px;
-    line-height: 60px;
-    letter-spacing: -0.01em;
+    font-size: 96px;
+    line-height: 1.05;
   }
 
   .hero-title-weds {
-    font-size: 34px;
-    margin: 12px 0;
+    font-size: 38px;
+    margin: 4px 0;
   }
 
   .hero-car-wrapper {
@@ -82,43 +82,38 @@
 
   .events-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 70px 40px;
-    max-width: 1200px;
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
+    gap: 70px 50px;
+    max-width: 950px;
   }
 
   .event-card {
-    width: 360px;
-    min-height: 480px;
+    width: 380px;
+    min-height: 490px;
   }
 
   .card-cane-wrapper {
-    min-height: 460px;
+    min-height: 470px;
+    padding: 55px 34px 44px;
   }
 
   .card-flower-top {
-    width: 165px;
-    top: -40px;
-    right: -35px;
+    width: 175px;
+    top: -45px;
+    right: -38px;
   }
 
   .card-flower-bottom {
-    width: 140px;
-    bottom: -35px;
+    width: 175px;
+    bottom: -45px;
+    left: -38px;
   }
 
-  .carousel-frame-container {
-    width: 450px;
-    height: 630px;
-  }
-
-  .carousel-viewport {
-    border-radius: 85px 85px 22px 22px;
-  }
-
-  .info-cards-grid {
-    max-width: 800px;
+  .family-grid {
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+    max-width: 900px;
   }
 
   /* Countdown Section Desktop matching Hero */
@@ -158,21 +153,74 @@
     min-height: 85vh;
   }
 
+  .hero-titles-container {
+    padding: 0;
+    margin-top: 18px;
+  }
+
   .hero-title-name {
-    font-size: 56px;
+    font-size: 58px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
   }
 
   .hero-title-weds {
+    font-size: 26px;
+  }
+
+  .hero-shubh-vivah {
+    font-size: 19px;
+  }
+
+  .hero-date {
+    font-size: 13px;
+    padding: 4px 14px;
+  }
+
+  .auspicious-header {
+    font-size: 13px;
+    gap: 8px 12px;
+  }
+
+  .auspicious-pill {
+    padding: 3px 10px;
+  }
+
+  .doha-text {
+    font-size: 16px;
+    line-height: 1.7;
+    padding: 0 10px;
+  }
+
+  .parents-host-title {
+    font-size: 22px;
+  }
+
+  .person-primary-name {
+    font-size: 32px;
+  }
+
+  .person-lineage {
+    font-size: 14px;
+    padding: 0 6px;
+  }
+
+  .mangal-parinay-heading {
+    font-size: 26px;
+  }
+
+  .invitation-cordial-message {
+    font-size: 15px;
+    padding: 0 8px;
+  }
+
+  .events-lead-in {
     font-size: 24px;
   }
 
-  .blessing-names {
-    font-size: 24px;
-  }
-
-  .couple-names-highlight {
-    font-size: 36px;
+  .events-lead-shloka {
+    font-size: 14px;
+    padding: 0 8px;
   }
 
   .events-grid {
@@ -188,61 +236,77 @@
 
   .card-cane-wrapper {
     width: 328px;
-    min-height: 440px;
-    padding: 44px 24px 34px;
+    min-height: 450px;
+    padding: 70px 24px 60px;
   }
 
   .card-flower-top {
-    width: 198px;
-    top: -55px;
-    right: -42px;
+    width: 155px;
+    top: -38px;
+    right: -28px;
   }
 
   .card-flower-bottom {
-    width: 162px;
-    bottom: -45px;
+    width: 145px;
+    bottom: -35px;
+    left: -28px;
+  }
+
+  .card-inner-content {
+    max-width: 220px;
+    gap: 8px;
   }
 
   .card-event-name {
-    font-size: 38px;
+    font-size: 28px;
   }
 
-  .heading-main {
-    font-size: 42px;
+  .card-event-date {
+    font-size: 14px;
   }
 
-  .carousel-frame-container {
-    width: 335px;
-    height: 470px;
+  .card-time-pill {
+    font-size: 14px;
+    padding: 5px 14px;
   }
 
-  .carousel-viewport {
-    border-radius: 65px 65px 18px 18px;
+  .card-event-venue {
+    font-size: 12px;
   }
 
-  .carousel-arrow.prev-arrow {
-    left: -16px;
+  .venue-name {
+    font-size: 32px;
   }
 
-  .carousel-arrow.next-arrow {
-    right: -16px;
+  .venue-address {
+    font-size: 16px;
   }
 
-  .couple-personal-letter {
+  .baal-manuhar-card {
+    padding: 24px 18px;
+  }
+
+  .manuhar-quote {
     font-size: 17px;
-    line-height: 1.6;
-    padding: 0 10px;
+    line-height: 1.7;
   }
 
-  .info-cards-grid {
+  .family-title {
+    font-size: 34px;
+  }
+
+  .family-grid {
     grid-template-columns: 1fr;
     max-width: 360px;
     gap: 20px;
   }
 
-  .action-card {
-    max-width: 340px;
+  .rsvp-card {
     padding: 28px 18px;
+  }
+
+  .rsvp-card-title {
+    font-size: 30px;
   }
 
   /* Countdown Section Mobile matching Hero */
@@ -252,7 +316,7 @@
   }
 
   .countdown-title {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .timer-number {
@@ -275,5 +339,18 @@
   .audio-control-fixed {
     top: 16px;
     right: 16px;
+  }
+
+  .site-footer {
+    padding: 36px 16px 54px;
+    margin-top: 30px;
+  }
+
+  .footer-blessing {
+    font-size: 17px;
+  }
+
+  .footer-family {
+    font-size: 14px;
   }
 }

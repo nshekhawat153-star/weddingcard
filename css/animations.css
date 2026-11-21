@@ -50,61 +50,63 @@
   transform-origin: bottom center;
 }
 
-/* 2. Hero Titles Spring Reveal (Abhishek Weds Kanika) */
-@keyframes titleAppearAbhishek {
+/* 2. Hero Titles Spring Reveal (Muskan Sang Aman) */
+@keyframes titleAppearMuskan {
   0% {
     opacity: 0;
-    transform: translateY(220px) rotate(12deg);
+    transform: translateY(70px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0);
   }
 }
 
-@keyframes titleAppearWeds {
+@keyframes titleAppearSang {
   0% {
     opacity: 0;
-    transform: translateY(240px) rotate(15deg);
+    transform: translateY(80px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0);
   }
 }
 
-@keyframes titleAppearKanika {
+@keyframes titleAppearAman {
   0% {
     opacity: 0;
-    transform: translateY(260px) rotate(-10deg);
+    transform: translateY(90px);
   }
   100% {
     opacity: 1;
-    transform: translateY(0) rotate(0deg);
+    transform: translateY(0);
   }
 }
 
+.title-muskan,
 .title-abhishek {
-  animation: titleAppearAbhishek 1.6s var(--spring-ease) 0.1s both;
+  animation: titleAppearMuskan 1.4s var(--spring-ease) 0.1s both;
 }
 
 .title-weds {
-  animation: titleAppearWeds 1.7s var(--spring-ease) 0.2s both;
+  animation: titleAppearSang 1.5s var(--spring-ease) 0.2s both;
 }
 
+.title-aman,
 .title-kanika {
-  animation: titleAppearKanika 1.8s var(--spring-ease) 0.3s both;
+  animation: titleAppearAman 1.6s var(--spring-ease) 0.3s both;
 }
 
 /* 3. Floating Audio Button Wave & Pulse */
 @keyframes audioPulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 4px 20px rgba(248, 104, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(243, 236, 186, 0.4);
   }
   50% {
     transform: scale(1.06);
-    box-shadow: 0 6px 25px rgba(248, 104, 0, 0.7);
+    box-shadow: 0 6px 25px rgba(243, 236, 186, 0.7);
   }
 }
 

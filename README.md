@@ -1,69 +1,38 @@
-# City 2 – Indian Wedding Invitation Website
+# मुस्कान संग अमन – विवाह निमंत्रण वेबसाइट (Muskan Weds Aman)
 
-A 100% pixel-accurate, standalone, and responsive replica of the [Missing Piece Invites 'City 2'](https://www.missingpieceinvites.com/demos/city-2) Indian Wedding Invitation website template.
+A standalone, responsive, royal Indian Wedding Invitation website based on the authentic traditional wedding card of **Muskan & Aman**.
 
-## ✨ Features
+## ✨ Details & Features
 
-- **Royal Rajasthan Vintage Aesthetic**: Slate-blue and heritage warm palette, vintage open-roof car illustrations, palace skyline silhouettes, cane rattan arches, and botanical accents.
-- **Audio Experience**: Floating music toggle button playing the soulful acoustic background wedding melody (`assets/audio/wedding_soundtrack.mp3`) with animated sound equalizer bars and smart mobile autoplay unlock.
-- **Interactive Ceremonies**: 6 arched cane wicker cards with floral corners:
-  - **Mehendi** – Friday, March 9th 2026 | Rambagh, Jaipur (6pm Onwards)
-  - **Haldi** – Saturday, March 10th 2026 | Rambagh, Jaipur (10am Onwards)
-  - **Cocktail** – Saturday, March 10th 2026 | Rambagh, Jaipur (8pm Onwards)
-  - **Engagement** – Sunday, March 11th 2026 | Rambagh, Jaipur (7pm Onwards)
-  - **Shaadi** – Monday, March 12th 2026 | Rambagh, Jaipur (7pm Onwards)
-  - **Reception** – Saturday, March 17th 2026 | Rambagh, Jaipur (8pm Onwards)
-  - Direct "See the route" buttons opening Google Maps.
-- **Interactive Photo Carousel**: "Meet the Bride & Groom" ornate photo frame with 6 high-resolution pre-wedding portraits, previous/next controls, dot indicators, and touch swipe gestures.
-- **Live Countdown Timer**: Real-time Days : Hours : Minutes : Seconds live clock counting down to the wedding date.
-- **WhatsApp RSVP**: Direct one-tap RSVP link opening WhatsApp with a pre-filled greeting message.
-- **Things to Know**: 4 Information cards covering Wedding Hashtag (`#abkan`), Venue Weather (28°C sunny), Staff Accommodation (Hotel Bhola Bhawan), and Valet Parking.
-- **100% Offline & Standalone**: All 29 graphic assets and background audio track are locally bundled inside `card/assets/`. Zero external telemetry, tracking pixels, or third-party store banners.
+- **Couple**:
+  - **वधु (Bride)**: सौ. कां. मुस्कान (सुपौत्री स्व. श्रीमती सीता देवी एवं स्व. श्री रामकिशोर माथुर, सुपुत्री श्रीमती चंचल देवी एवं श्री गिरधारी लाल माथुर)
+  - **वर (Groom)**: चि. अमन (सुपौत्र स्व. श्रीमती श्याम बाई एवं स्व. श्री श्याम सुन्दर माथुर, सुपुत्र श्रीमती पदमा देवी एवं श्री लोकेश माथुर)
+- **Auspicious Shlokas & Doha**:
+  - ॥ मातेश्वरी की कृपा ॥ ॥ श्री गणेशाय नमः ॥ ॥ श्री पितृदेवाय नमः ॥
+  - विघ्न हरण मंगल करण, गणनायक गणराज । प्रथम निमन्त्रण आपको, सकल सुधारो काज ॥
+  - ॐ वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभः। निर्विघ्नं कुरु मे देव, सर्व कार्येषु सर्वदा ॥
+- **Ceremonies & Itinerary (शगुन के पल)**:
+  - **हल्दी की रस्म**: शुक्रवार, 4 दिसम्बर 2026 (प्रातः 12.15 बजे | विवाह स्थल : अभिनन्दन)
+  - **महिला संगीत**: शुक्रवार, 4 दिसम्बर 2026 (सायं 6.15 बजे | विवाह स्थल : अभिनन्दन)
+  - **चाक भात**: शनिवार, 5 दिसम्बर 2026 (प्रातः 11.15 बजे | गृह निवास : सीताराम भवन, झोटवाड़ा)
+  - **प्रीतिभोज**: शनिवार, 5 दिसम्बर 2026 (रात्रि 8.15 बजे से | विवाह स्थल : अभिनन्दन)
+- **विवाह स्थल (Venue)**:
+  - **अभिनन्दन** – जे.डी.ए. सामुदायिक केन्द्र, सुभाष नगर शॉपिंग सेन्टर, शास्त्री नगर, जयपुर
+  - One-click Google Maps directions button
+  - **प्रतिष्ठान**: शिवम् फोटो स्टूडियो, जयपुर
+- **Family Details (स्नेह एवं शुभाशीर्वाद)**:
+  - **बाल मनुहार**: "छोटे-छोटे पांव हमारे, कैसे आयें बुलाने को, मेरी मौसी की शादी, मे भुल न जाना आने को" — युवांश, अदाविका, हनविका
+  - **उत्तराकांक्षी**: गोविन्द किशोर माथुर, गिरधारी लाल माथुर (B-9, सीताराम भवन, निवारू रोड़, झोटवाड़ा, जयपुर | मो. 7073990111, 9667822215)
+  - **विशेष आग्रह**: अरूणा माथुर (धर्मपत्नी स्व. श्री सत्यनारायण माथुर)
+  - **जवाई पक्ष**: राधा देवी, शशिकला देवी, आकांक्षा - रविप्रकाश जी, नेहा - गोविन्दा जी, शैलजा
+  - **ननिहाल पक्ष**: संतोष देवी, मुकेश - मंजू, लोकेश - अंजू, आशु - रीना, निशान्त, ईशा
+  - **दर्शनाभिलाषी**: बृज किशोर, द्वारका प्रसाद, श्रीचन्द, युवराज, प्रदीप, प्रवीण, बुद्धिप्रकाश, पवन, मनीष, अजय, अमन, आकाश, साहिल, चिन्मय एवं समस्त माथुर परिवार
+- **RSVP & Contact**: One-tap WhatsApp RSVP message & direct dial buttons for both mobile numbers.
+- **Live Countdown Timer**: Real-time ticker counting down to शनिवार, 5 दिसम्बर 2026 (20:15 IST).
 
-## 🚀 Quick Start (Local Preview)
-
-Run a local HTTP server from the project directory:
+## 🚀 Local Preview
 
 ```bash
-# Preview directly from card folder
-python3 -m http.server 8000 --directory card
+python3 -m http.server 8000
 ```
-
-Then open your browser at:
-`http://localhost:8000`
-
-## 📁 Directory Structure
-
-```
-card/
-├── assets/
-│   ├── audio/
-│   │   └── wedding_soundtrack.mp3       # Soulful background soundtrack
-│   └── images/
-│       ├── hero/                        # Vintage car, sky palace, textures
-│       ├── cards/                       # Cane border arch, flower corners
-│       ├── breakers/                    # Vintage car section separators
-│       ├── gallery/                     # 6 couple portraits, frame, arrows
-│       ├── info_icons/                  # Hashtag, weather, staff, parking icons
-│       └── footer/                      # Sunset car & skyline
-├── css/
-│   ├── typography.css                   # Cormorant, Gotu, Manrope fonts
-│   ├── animations.css                   # Spring bounce, car drive-in, pulse
-│   ├── style.css                        # Layout, cards, colors, buttons
-│   └── responsive.css                   # Mobile (<810px), Tablet, Desktop
-├── js/
-│   ├── music-player.js                  # Audio controls & autoplay fallback
-│   ├── photo-carousel.js                # Meet the couple slider & touch swipe
-│   ├── countdown.js                     # Live countdown ticker
-│   └── appear-animations.js             # Staggered scroll entrance effects
-├── index.html                           # Main invitation webpage
-└── SPEC.md                              # Formal specification
-```
-
-## 🛠️ Customization
-
-- **Couple & Family Names**: Edit text in `card/index.html` under Section 2 (`#blessings`).
-- **Ceremony Dates & Venues**: Update cards inside Section 3 (`#events`).
-- **Couple Portraits**: Replace `card/assets/images/gallery/photo_1.jpeg` through `photo_6.jpeg` with your own pre-wedding photos.
-- **Music**: Replace `card/assets/audio/wedding_soundtrack.mp3` with your preferred wedding track.
-- **WhatsApp Number**: Update `https://wa.me/91XXXXXXXXXX` in Section 5 (`#rsvp`).
+Then open `http://localhost:8000` in your browser.
