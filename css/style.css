@@ -144,7 +144,7 @@ body {
 
 .hero-title-name {
   font-family: var(--font-hindi-display);
-  font-size: 84px;
+  font-size: 96px;
   font-weight: 700;
   letter-spacing: 0.04em;
   line-height: 1.05;
@@ -154,11 +154,11 @@ body {
 
 .hero-title-weds {
   font-family: var(--font-hindi-display);
-  font-size: 34px;
+  font-size: 38px;
   font-weight: 700;
   letter-spacing: 0.12em;
-  color: var(--color-gold-warm);
-  margin: 6px 0;
+  color: #FFE28A;
+  margin: 4px 0;
   text-shadow: 0 1px 4px rgba(44, 16, 22, 0.15);
 }
 
