@@ -149,32 +149,45 @@
    ========================================================================== */
 @media (max-width: 809.98px) {
   .hero-section {
-    padding-top: 60px;
-    min-height: 85vh;
+    padding-top: 36px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    justify-content: space-between;
   }
 
   .hero-titles-container {
     padding: 0;
-    margin-top: 18px;
+    margin-top: 6px;
+    gap: 0;
   }
 
   .hero-title-name {
-    font-size: 58px;
-    line-height: 1.1;
+    font-size: 56px;
+    line-height: 1.0;
     letter-spacing: 0.02em;
+    margin: 0;
   }
 
   .hero-title-weds {
-    font-size: 26px;
+    font-size: 23px;
+    margin: -3px 0;
   }
 
   .hero-shubh-vivah {
-    font-size: 19px;
+    font-size: 18px;
+    margin-top: 3px;
+    margin-bottom: 0;
   }
 
   .hero-date {
     font-size: 13px;
-    padding: 4px 14px;
+    padding: 4px 16px;
+    margin-top: 5px;
+  }
+
+  .hero-car-wrapper {
+    margin-bottom: -32px;
+    max-width: 100%;
   }
 
   .auspicious-header {

@@ -886,8 +886,9 @@ body {
   z-index: 6;
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 40px 20px 60px;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 50px;
 }
 
 .rsvp-wrapper {
@@ -945,23 +946,24 @@ body {
   font-family: var(--font-devanagari);
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
-  background: #25D366;
+  background: var(--color-whatsapp);
   color: #ffffff;
-  padding: 14px 28px;
+  padding: 13px 26px;
   border-radius: 40px;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 15px;
   text-decoration: none;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.25s ease;
+  white-space: nowrap;
 }
 
 .whatsapp-btn:hover {
-  transform: scale(1.04);
-  background: #20ba59;
-  box-shadow: 0 6px 25px rgba(37, 211, 102, 0.6);
+  transform: translateY(-2px);
+  background: #0b4537;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
 }
 
 .rsvp-call-links {
