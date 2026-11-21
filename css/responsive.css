@@ -197,33 +197,43 @@
   }
 
   .parents-host-title {
-    font-size: 22px;
+    font-size: 25px;
+    font-weight: 800;
   }
 
   .person-primary-name {
-    font-size: 32px;
+    font-size: 38px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.4);
   }
 
   .person-lineage {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     padding: 0 6px;
   }
 
   .mangal-parinay-heading {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.3px var(--color-gold-warm);
   }
 
   .invitation-cordial-message {
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     padding: 0 8px;
   }
 
   .events-lead-in {
-    font-size: 24px;
+    font-size: 28px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.3px var(--color-gold-warm);
   }
 
   .events-lead-shloka {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 600;
     padding: 0 8px;
   }
 
@@ -262,28 +272,42 @@
   }
 
   .card-event-name {
-    font-size: 28px;
+    font-size: 32px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px var(--color-teal);
   }
 
   .card-event-date {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 700;
   }
 
   .card-time-pill {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 700;
     padding: 5px 14px;
   }
 
   .card-event-venue {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .card-dress-code {
+    font-size: 13px;
+    font-weight: 700;
+    padding: 3px 12px;
   }
 
   .venue-name {
-    font-size: 32px;
+    font-size: 36px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px var(--color-cream);
   }
 
   .venue-address {
-    font-size: 16px;
+    font-size: 17px;
+    font-weight: 600;
   }
 
   .baal-manuhar-card {
@@ -291,12 +315,20 @@
   }
 
   .manuhar-quote {
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 600;
     line-height: 1.7;
   }
 
   .family-title {
-    font-size: 34px;
+    font-size: 38px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px var(--color-cream);
+  }
+
+  .family-subtitle {
+    font-size: 19px;
+    font-weight: 700;
   }
 
   .family-grid {
@@ -305,12 +337,34 @@
     gap: 20px;
   }
 
+  .family-card-title {
+    font-size: 21px;
+    font-weight: 800;
+  }
+
+  .family-card-content {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .family-lead-name {
+    font-size: 17px;
+    font-weight: 800;
+  }
+
   .rsvp-card {
     padding: 28px 18px;
   }
 
   .rsvp-card-title {
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: 800;
+    -webkit-text-stroke: 0.4px var(--color-cream);
+  }
+
+  .rsvp-text {
+    font-size: 16px;
+    font-weight: 600;
   }
 
   /* Countdown Section Mobile matching Hero */
