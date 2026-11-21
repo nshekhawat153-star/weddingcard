@@ -164,7 +164,7 @@
     line-height: 1.05;
     letter-spacing: 0.02em;
     color: var(--color-cream);
-    text-shadow: 0 2px 12px rgba(44, 16, 22, 0.3);
+    text-shadow: 0 1px 3px rgba(44, 16, 22, 0.15);
     margin: 0;
   }
 
@@ -172,7 +172,7 @@
     font-size: 26px;
     color: var(--color-gold-warm);
     margin: 4px 0;
-    text-shadow: 0 2px 8px rgba(44, 16, 22, 0.25);
+    text-shadow: 0 1px 3px rgba(44, 16, 22, 0.15);
   }
 
   .hero-car-wrapper {

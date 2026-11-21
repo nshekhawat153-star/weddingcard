@@ -149,7 +149,7 @@ body {
   letter-spacing: 0.04em;
   line-height: 1.05;
   color: var(--color-cream);
-  text-shadow: 0 2px 14px rgba(44, 16, 22, 0.35);
+  text-shadow: 0 1px 4px rgba(44, 16, 22, 0.15);
 }
 
 .hero-title-weds {
@@ -159,7 +159,7 @@ body {
   letter-spacing: 0.12em;
   color: var(--color-gold-warm);
   margin: 6px 0;
-  text-shadow: 0 2px 10px rgba(44, 16, 22, 0.3);
+  text-shadow: 0 1px 4px rgba(44, 16, 22, 0.15);
 }
 
 .hero-car-wrapper {
