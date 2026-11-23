@@ -1,33 +1,32 @@
-# मुस्कान संग अमन – विवाह निमंत्रण वेबसाइट (Muskan Weds Aman)
+# Muskan Weds Aman – Wedding Invitation Website
 
-A standalone, responsive, royal Indian Wedding Invitation website based on the authentic traditional wedding card of **Muskan & Aman**.
+A standalone, responsive, royal Indian Wedding Invitation website for **Muskan & Aman**.
 
 ## ✨ Details & Features
 
 - **Couple**:
-  - **वधु (Bride)**: सौ. कां. मुस्कान (सुपौत्री स्व. श्रीमती सीता देवी एवं स्व. श्री रामकिशोर माथुर, सुपुत्री श्रीमती चंचल देवी एवं श्री गिरधारी लाल माथुर)
-  - **वर (Groom)**: चि. अमन (सुपौत्र स्व. श्रीमती श्याम बाई एवं स्व. श्री श्याम सुन्दर माथुर, सुपुत्र श्रीमती पदमा देवी एवं श्री लोकेश माथुर)
-- **Auspicious Shlokas & Doha**:
-  - ॥ मातेश्वरी की कृपा ॥ ॥ श्री गणेशाय नमः ॥ ॥ श्री पितृदेवाय नमः ॥
-  - विघ्न हरण मंगल करण, गणनायक गणराज । प्रथम निमन्त्रण आपको, सकल सुधारो काज ॥
-  - ॐ वक्रतुण्ड महाकाय, सूर्यकोटि समप्रभः। निर्विघ्नं कुरु मे देव, सर्व कार्येषु सर्वदा ॥
-- **Ceremonies & Itinerary (शगुन के पल)**:
-  - **हल्दी की रस्म**: शुक्रवार, 4 दिसम्बर 2026 (प्रातः 12.15 बजे | विवाह स्थल : अभिनन्दन)
-  - **महिला संगीत**: शुक्रवार, 4 दिसम्बर 2026 (सायं 6.15 बजे | विवाह स्थल : अभिनन्दन)
-  - **चाक भात**: शनिवार, 5 दिसम्बर 2026 (प्रातः 11.15 बजे | विवाह स्थल : अभिनन्दन)
-  - **प्रीतिभोज**: शनिवार, 5 दिसम्बर 2026 (रात्रि 8.15 बजे से | विवाह स्थल : अभिनन्दन)
-- **विवाह स्थल (Venue)**:
-  - **अभिनन्दन** – जे.डी.ए. सामुदायिक केन्द्र, सुभाष नगर शॉपिंग सेन्टर, शास्त्री नगर, जयपुर
+  - **The Bride**: Muskan (Daughter of Mrs. Chanchal Devi & Mr. Girdhari Lal Mathur, Granddaughter of Late Mrs. Sita Devi & Late Shri Ramkishore Mathur)
+  - **The Groom**: Aman (Son of Mrs. Padma Devi & Mr. Lokesh Mathur, Grandson of Late Mrs. Shyam Bai & Late Shri Shyam Sunder Mathur)
+- **Blessings**:
+  - ॥ SHRI GANESHAYA NAMAH ॥
+  - "With the divine blessings of Lord Ganesha"
+  - "Together with their families, we invite you to celebrate the beginning of their beautiful journey together."
+- **Wedding Celebrations**:
+  - **Friday · 04 December 2026**:
+    - **Haldi Ceremony**: 12:15 PM (Dress Code: Pastel Pink | Venue: Abhinandan Garden)
+    - **Sangeet Ceremony**: 6:15 PM (Venue: Abhinandan Garden)
+  - **Saturday · 05 December 2026**:
+    - **Pre-Wedding Rituals (Chaak Bhaat)**: 11:15 AM (Venue: Abhinandan Garden)
+    - **Wedding Reception & Dinner**: 7:15 PM onwards (Venue: Abhinandan Garden)
+- **Venue**:
+  - **Abhinandan Garden** – JDA Community Centre, Subhash Nagar Shopping Centre, Shastri Nagar, Jaipur, Rajasthan
   - One-click Google Maps directions button
-- **Family Details (स्नेह एवं शुभाशीर्वाद)**:
-  - **बाल मनुहार**: "छोटे-छोटे पांव हमारे, कैसे आयें बुलाने को, मेरी मौसी की शादी, मे भुल न जाना आने को" — युवांश, अदाविका, हनविका
-  - **उत्तराकांक्षी**: गोविन्द किशोर माथुर, गिरधारी लाल माथुर (B-9, सीताराम भवन, निवारू रोड़, झोटवाड़ा, जयपुर | मो. 7073990111, 9667822215)
-  - **विशेष आग्रह**: अरूणा माथुर (धर्मपत्नी स्व. श्री सत्यनारायण माथुर)
-  - **जवाई पक्ष**: राधा देवी, शशिकला देवी, आकांक्षा - रविप्रकाश जी, नेहा - गोविन्दा जी, शैलजा
-  - **ननिहाल पक्ष**: संतोष देवी, मुकेश - मंजू, लोकेश - अंजू, आशु - रीना, निशान्त, ईशा
-  - **दर्शनाभिलाषी**: बृज किशोर, द्वारका प्रसाद, श्रीचन्द, युवराज, प्रदीप, प्रवीण, बुद्धिप्रकाश, पवन, मनीष, अजय, अमन, आकाश, साहिल, चिन्मय एवं समस्त माथुर परिवार
-- **RSVP & Contact**: One-tap WhatsApp RSVP message & direct dial buttons for both mobile numbers.
-- **Live Countdown Timer**: Real-time ticker counting down to शनिवार, 5 दिसम्बर 2026 (20:15 IST).
+- **Family Note & RSVP**:
+  - "Your gracious presence and blessings will make our celebration even more special."
+  - **With Love**: The Mathur Family
+  - **RSVP**: 7073990111 · 9667822215 (One-tap WhatsApp RSVP message & direct call)
+  - ॥ SHUBH VIVAH ॥
+- **Live Countdown Timer**: Real-time ticker counting down to Saturday, 05 December 2026 (19:15 IST).
 
 ## 🚀 Local Preview
 

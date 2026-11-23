@@ -11,8 +11,8 @@
 
   if (!daysEl || !hoursEl || !minsEl || !secsEl) return;
 
-  // Wedding Date: Saturday, 5 December 2026 (Pritibhoj 8:15 PM)
-  let targetDate = new Date("2026-12-05T20:15:00+05:30").getTime();
+  // Wedding Date: Saturday, 5 December 2026 (Reception 7:15 PM)
+  let targetDate = new Date("2026-12-05T19:15:00+05:30").getTime();
   const now = new Date().getTime();
 
   // Fallback if the target date has passed
