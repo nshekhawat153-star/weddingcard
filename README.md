@@ -5,8 +5,8 @@ A standalone, responsive, royal Indian Wedding Invitation website for **Muskan &
 ## ✨ Details & Features
 
 - **Couple**:
-  - **The Bride**: Muskan (Daughter of Mrs. Chanchal Devi & Mr. Girdhari Lal Mathur, Granddaughter of Late Mrs. Sita Devi & Late Shri Ramkishore Mathur)
-  - **The Groom**: Aman (Son of Mrs. Padma Devi & Mr. Lokesh Mathur, Grandson of Late Mrs. Shyam Bai & Late Shri Shyam Sunder Mathur)
+  - **The Bride**: Muskan (Daughter of Mrs. Chanchal & Mr. Girdhari Lal Mathur, Granddaughter of Late Mrs. Sita Devi & Late Shri Ramkishore Mathur)
+  - **The Groom**: Aman (Son of Mrs. Padma & Mr. Lokesh Mathur, Grandson of Late Mrs. Shyam Bai & Late Shri Shyam Sunder Mathur)
 - **Blessings**:
   - ॥ SHRI GANESHAYA NAMAH ॥
   - "With the divine blessings of Lord Ganesha"
