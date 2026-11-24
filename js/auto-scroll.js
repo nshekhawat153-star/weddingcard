@@ -1,9 +1,11 @@
 /**
  * Luxury Auto-Scroll Controller for Wedding Invitation
- * - Delays start so user can admire the hero scene & animated car
- * - Smooth slow cinematic auto-scroll at comfortable reading speed
- * - Automatically pauses on ANY user interaction (touch, wheel, drag, key)
- * - Seamlessly resumes after idle, or user can toggle with the floating pill
+ * - Delays start so user can admire the hero scene & animated vintage car
+ * - Smooth cinematic auto-scroll at comfortable reading speed
+ * - Bypasses CSS scroll-behavior: smooth to prevent browser stutter/freezing
+ * - Seamlessly pauses on ANY user interaction (touch, drag, wheel, swipe)
+ * - Automatically resumes after 2.5s idle when user lets go
+ * - Floating toggle button for instant manual control
  */
 
 (function () {
@@ -13,11 +15,11 @@
   let userInteracting = false;
   let resumeTimeout = null;
   let animationFrameId = null;
-  let hasStarted = false;
+  let accumulatedScroll = 0;
 
-  const SCROLL_SPEED = 0.8; // pixels per frame (smooth cinematic glide)
-  const INITIAL_DELAY_MS = 3200; // time to view the hero section first
-  const RESUME_IDLE_MS = 4000; // resume after user stops scrolling
+  const SCROLL_SPEED = 1.35; // Pixels per frame (~80px/sec at 60fps) - smooth & readable
+  const INITIAL_DELAY_MS = 1800; // Time to view hero before gliding
+  const RESUME_IDLE_MS = 2500; // Resume after user stops touching/scrolling
 
   const btn = document.getElementById('auto-scroll-btn');
   const btnText = document.getElementById('auto-scroll-text');
@@ -33,26 +35,48 @@
     }
   }
 
+  function getScrollTop() {
+    return window.scrollY || window.pageYOffset || document.documentElement.scrollTop || 0;
+  }
+
   function autoScrollStep() {
     if (!isAutoScrolling || userInteracting) return;
 
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
-    const currentScroll = window.scrollY || window.pageYOffset;
+    const maxScroll = Math.max(
+      document.body.scrollHeight,
+      document.documentElement.scrollHeight
+    ) - window.innerHeight;
+
+    const currentScroll = getScrollTop();
 
     if (currentScroll >= maxScroll - 5) {
-      // Reached the end (countdown section)
+      // Reached the end
       stopAutoScroll();
       return;
     }
 
-    window.scrollBy(0, SCROLL_SPEED);
+    // Keep accumulator in sync if page jumped
+    if (Math.abs(accumulatedScroll - currentScroll) > 15) {
+      accumulatedScroll = currentScroll;
+    }
+
+    accumulatedScroll += SCROLL_SPEED;
+
+    // Use instant behavior to prevent native CSS smooth-scroll from interrupting
+    window.scrollTo({
+      top: accumulatedScroll,
+      left: 0,
+      behavior: 'instant'
+    });
+
     animationFrameId = requestAnimationFrame(autoScrollStep);
   }
 
   function startAutoScroll() {
-    if (isAutoScrolling && !userInteracting) return;
+    accumulatedScroll = getScrollTop();
     isAutoScrolling = true;
     userInteracting = false;
+    document.documentElement.style.scrollBehavior = 'auto';
     updateButtonUI();
     cancelAnimationFrame(animationFrameId);
     animationFrameId = requestAnimationFrame(autoScrollStep);
@@ -64,9 +88,10 @@
     updateButtonUI();
 
     clearTimeout(resumeTimeout);
-    if (scheduleResume) {
+    if (scheduleResume && isAutoScrolling) {
       resumeTimeout = setTimeout(() => {
         userInteracting = false;
+        accumulatedScroll = getScrollTop();
         if (isAutoScrolling) {
           updateButtonUI();
           animationFrameId = requestAnimationFrame(autoScrollStep);
@@ -80,46 +105,76 @@
     userInteracting = false;
     clearTimeout(resumeTimeout);
     cancelAnimationFrame(animationFrameId);
+    document.documentElement.style.scrollBehavior = '';
     updateButtonUI();
   }
 
   function toggleAutoScroll() {
     clearTimeout(resumeTimeout);
     if (isAutoScrolling && !userInteracting) {
-      isAutoScrolling = false;
-      userInteracting = false;
-      cancelAnimationFrame(animationFrameId);
+      stopAutoScroll();
     } else {
-      isAutoScrolling = true;
-      userInteracting = false;
-      cancelAnimationFrame(animationFrameId);
-      animationFrameId = requestAnimationFrame(autoScrollStep);
+      startAutoScroll();
     }
-    updateButtonUI();
   }
 
-  // User interaction listeners: pause immediately when user touches or scrolls
-  const interactionEvents = ['touchstart', 'touchmove', 'wheel', 'pointerdown', 'keydown', 'mousedown'];
-  interactionEvents.forEach(evt => {
+  // User interactions: immediately pause when user touches, wheels, or drags
+  const pauseEvents = ['touchstart', 'touchmove', 'wheel', 'pointerdown', 'keydown', 'mousedown'];
+  pauseEvents.forEach(evt => {
     window.addEventListener(evt, () => {
       if (isAutoScrolling) {
-        pauseAutoScroll(true);
+        pauseAutoScroll(false); // Pause without timer while finger is on screen
       }
     }, { passive: true });
+  });
+
+  // When user releases finger or mouse, start the resume countdown
+  const resumeEvents = ['touchend', 'touchcancel', 'pointerup', 'pointercancel', 'mouseup'];
+  resumeEvents.forEach(evt => {
+    window.addEventListener(evt, () => {
+      accumulatedScroll = getScrollTop();
+      if (isAutoScrolling) {
+        pauseAutoScroll(true); // Schedule resume after idle
+      }
+    }, { passive: true });
+  });
+
+  // Track manual scroll to update accumulator
+  window.addEventListener('scroll', () => {
+    if (userInteracting) {
+      accumulatedScroll = getScrollTop();
+    }
+  }, { passive: true });
+
+  // Handle visibility change (tab switch / screen lock)
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+      cancelAnimationFrame(animationFrameId);
+    } else if (isAutoScrolling && !userInteracting) {
+      accumulatedScroll = getScrollTop();
+      animationFrameId = requestAnimationFrame(autoScrollStep);
+    }
   });
 
   if (btn) {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
+      e.preventDefault();
       toggleAutoScroll();
     });
   }
 
-  // Initial delay: First let the guest enjoy the hero palace scene
-  window.addEventListener('DOMContentLoaded', () => {
+  // Automatic initiation
+  function initAutoScroll() {
     setTimeout(() => {
-      hasStarted = true;
       startAutoScroll();
     }, INITIAL_DELAY_MS);
-  });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAutoScroll);
+  } else {
+    initAutoScroll();
+  }
+
 })();

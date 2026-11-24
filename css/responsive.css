@@ -203,7 +203,8 @@
   }
 
   .person-primary-name {
-    font-size: 40px;
+    font-size: 44px;
+    font-weight: 700;
   }
 
   .relation-label {
@@ -227,8 +228,9 @@
   }
 
   .events-lead-in {
-    font-size: 23px;
-    letter-spacing: 0.08em;
+    font-size: 22px;
+    letter-spacing: 0.12em;
+    padding: 0 10px;
   }
 
   .events-grid {

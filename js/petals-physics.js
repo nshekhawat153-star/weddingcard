@@ -11,7 +11,7 @@ class PetalSimulation {
     this.ctx = this.canvas.getContext('2d');
     this.petals = [];
     this.sparkles = [];
-    this.maxPetals = 48; // Smooth 60 FPS on mobile
+    this.maxPetals = 16; // Gentle, elegant petal drift (reduced from 48)
     this.mouse = { x: -1000, y: -1000, vx: 0, vy: 0, lastX: 0, lastY: 0 };
     this.wind = { current: 0, target: 0, timer: 0 };
     this.isActive = true;
@@ -47,8 +47,8 @@ class PetalSimulation {
       this.petals.push(this.createPetal(true));
     }
 
-    // Shimmering Rose Gold Dust
-    for (let i = 0; i < 30; i++) {
+    // Shimmering Rose Gold Dust (subtle)
+    for (let i = 0; i < 10; i++) {
       this.sparkles.push(this.createSparkle(true));
     }
 
