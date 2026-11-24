@@ -160,19 +160,20 @@
   }
 
   .hero-title-name {
-    font-size: 52px;
+    font-size: 54px;
     line-height: 1.05;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.12em;
     color: var(--color-cream);
     text-shadow: 0 1px 3px rgba(44, 16, 22, 0.15);
     margin: 0;
   }
 
   .hero-title-weds {
-    font-size: 20px;
-    letter-spacing: 0.25em;
+    font-family: var(--font-script);
+    font-size: 34px;
+    letter-spacing: 0.04em;
     color: #FFE28A;
-    margin: 2px 0;
+    margin: 1px 0;
     text-shadow: 0 1px 3px rgba(44, 16, 22, 0.15);
   }
 
@@ -265,20 +266,23 @@
   }
 
   .card-event-name {
-    font-size: 19px;
-    letter-spacing: 0.05em;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
   }
 
   .card-event-subname {
-    font-size: 13px;
+    font-size: 12.5px;
+    letter-spacing: 0.06em;
   }
 
   .card-event-date {
-    font-size: 13px;
+    font-size: 12px;
+    letter-spacing: 0.08em;
   }
 
   .card-time-pill {
-    font-size: 14px;
+    font-size: 13.5px;
     padding: 5px 14px;
   }
 
@@ -292,8 +296,8 @@
   }
 
   .venue-name {
-    font-size: 28px;
-    letter-spacing: 0.06em;
+    font-size: 30px;
+    letter-spacing: 0.1em;
   }
 
   .venue-address {
@@ -313,8 +317,20 @@
     padding: 0 4px;
   }
 
+  .with-love-label {
+    font-size: 28px;
+  }
+
   .family-sign-title {
-    font-size: 24px;
+    font-size: 26px;
+  }
+
+  .auto-scroll-indicator {
+    bottom: 16px;
+    right: 14px;
+    padding: 6px 12px;
+    font-size: 11.5px;
+    gap: 6px;
   }
 
   /* Countdown Section Mobile matching Hero */

@@ -33,12 +33,21 @@
   <link rel="icon" type="image/png" href="assets/images/ganesha.png">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/typography.css?v=4.0">
-  <link rel="stylesheet" href="css/animations.css?v=4.0">
-  <link rel="stylesheet" href="css/style.css?v=4.0">
-  <link rel="stylesheet" href="css/responsive.css?v=4.0">
+  <link rel="stylesheet" href="css/typography.css?v=4.1">
+  <link rel="stylesheet" href="css/animations.css?v=4.1">
+  <link rel="stylesheet" href="css/style.css?v=4.1">
+  <link rel="stylesheet" href="css/responsive.css?v=4.1">
 </head>
 <body>
+
+  <!-- Floating Falling Rose Petals Canvas -->
+  <canvas id="petals-canvas" class="petals-canvas-container"></canvas>
+
+  <!-- Floating Luxury Auto-Scroll Controller Pill -->
+  <button class="auto-scroll-indicator" id="auto-scroll-btn" aria-label="Toggle auto scroll">
+    <span class="auto-scroll-dot"></span>
+    <span class="auto-scroll-text" id="auto-scroll-text">Auto Scroll</span>
+  </button>
 
   <!-- Floating Audio Control Button -->
   <div class="audio-control-fixed" id="audio-container">
@@ -72,9 +81,9 @@
 
         <!-- Dynamic Animated Titles in English -->
         <div class="hero-titles-container">
-          <h1 class="hero-title-name title-muskan font-royal">MUSKAN</h1>
-          <h2 class="hero-title-weds title-weds font-royal">WEDS</h2>
-          <h1 class="hero-title-name title-aman font-royal">AMAN</h1>
+          <h1 class="hero-title-name title-muskan font-luxury">MUSKAN</h1>
+          <h2 class="hero-title-weds title-weds font-script">Weds</h2>
+          <h1 class="hero-title-name title-aman font-luxury">AMAN</h1>
         </div>
 
         <!-- Animated Open-Top Vintage Car -->
@@ -268,7 +277,7 @@
             </p>
 
             <div class="rsvp-with-love">
-              <span class="with-love-label font-royal">WITH LOVE,</span>
+              <span class="with-love-label font-script">With Love,</span>
               <h3 class="family-sign-title font-serif">The Mathur Family</h3>
             </div>
 
@@ -358,5 +367,14 @@
   <script src="js/music-player.js"></script>
   <script src="js/countdown.js"></script>
   <script src="js/appear-animations.js"></script>
+  <script src="js/petals-physics.js"></script>
+  <script src="js/auto-scroll.js"></script>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.PetalSimulation) {
+        new window.PetalSimulation('petals-canvas');
+      }
+    });
+  </script>
 </body>
 </html>

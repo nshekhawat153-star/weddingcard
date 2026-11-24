@@ -144,21 +144,21 @@ body {
 
 .hero-title-name {
   font-family: var(--font-royal);
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
+  font-size: 82px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
   line-height: 1.05;
   color: var(--color-cream);
   text-shadow: 0 1px 4px rgba(44, 16, 22, 0.15);
 }
 
 .hero-title-weds {
-  font-family: var(--font-royal);
-  font-size: 26px;
-  font-weight: 700;
-  letter-spacing: 0.28em;
+  font-family: var(--font-script);
+  font-size: 44px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   color: #FFE28A;
-  margin: 4px 0;
+  margin: 1px 0;
   text-shadow: 0 1px 4px rgba(44, 16, 22, 0.15);
 }
 
@@ -269,10 +269,10 @@ body {
 
 .person-role-tag {
   display: inline-block;
-  font-family: var(--font-royal);
+  font-family: var(--font-marcellus);
   font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
+  font-weight: 500;
+  letter-spacing: 0.24em;
   color: #FFE28A;
   margin-bottom: 2px;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
@@ -280,8 +280,9 @@ body {
 
 .person-primary-name {
   font-family: var(--font-serif);
-  font-size: 46px;
-  font-weight: 700;
+  font-size: 50px;
+  font-weight: 500;
+  font-style: italic;
   color: #ffffff;
   letter-spacing: 0.02em;
   text-shadow: 0 2px 8px rgba(40, 10, 20, 0.35);
@@ -475,41 +476,44 @@ body {
 }
 
 .card-event-name {
-  font-family: var(--font-royal);
-  font-size: 20px;
+  font-family: var(--font-marcellus), var(--font-royal);
+  font-size: 23px;
   font-weight: 700;
-  color: var(--color-teal);
-  letter-spacing: 0.06em;
+  color: #134e40;
+  letter-spacing: 0.08em;
   line-height: 1.25;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 
 .card-event-subname {
   display: block;
-  font-size: 14px;
+  font-family: var(--font-marcellus);
+  font-size: 13.5px;
   font-weight: 600;
-  letter-spacing: 0.03em;
-  color: var(--color-teal);
-  opacity: 0.9;
-  margin-top: 2px;
+  letter-spacing: 0.06em;
+  color: #134e40;
+  opacity: 0.95;
+  margin-top: 3px;
 }
 
 .card-event-divider {
-  width: 36px;
-  height: 2px;
+  width: 40px;
+  height: 1.5px;
   background: var(--color-teal);
   border-radius: 2px;
-  opacity: 0.5;
-  margin: 2px 0 4px;
+  opacity: 0.55;
+  margin: 3px 0 5px;
 }
 
 .card-event-date {
   font-family: var(--font-sans);
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   color: #2c2c2c;
   line-height: 1.3;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .card-time-pill {
@@ -622,10 +626,10 @@ body {
 }
 
 .venue-badge-pill {
-  font-family: var(--font-royal);
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.22em;
+  font-family: var(--font-marcellus);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.24em;
   color: var(--color-cream);
   background: rgba(243, 236, 186, 0.14);
   border: 1.5px solid var(--color-gold-border);
@@ -635,11 +639,11 @@ body {
 }
 
 .venue-name {
-  font-family: var(--font-royal);
-  font-size: 36px;
-  font-weight: 700;
+  font-family: var(--font-luxury);
+  font-size: 38px;
+  font-weight: 400;
   color: var(--color-cream);
-  letter-spacing: 0.08em;
+  letter-spacing: 0.12em;
   margin: 4px 0;
   text-shadow: 0 2px 14px rgba(0, 0, 0, 0.3);
 }
@@ -927,26 +931,27 @@ body {
 }
 
 .with-love-label {
-  font-family: var(--font-royal);
-  font-size: 13px;
-  letter-spacing: 0.25em;
-  font-weight: 700;
+  font-family: var(--font-script);
+  font-size: 32px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
   color: #FFE28A;
 }
 
 .family-sign-title {
   font-family: var(--font-serif);
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 32px;
+  font-weight: 500;
+  font-style: italic;
   color: #ffffff;
   letter-spacing: 0.02em;
 }
 
 .rsvp-heading-label {
-  font-family: var(--font-royal);
-  font-size: 16px;
-  letter-spacing: 0.25em;
-  font-weight: 800;
+  font-family: var(--font-marcellus);
+  font-size: 15px;
+  letter-spacing: 0.28em;
+  font-weight: 600;
   color: #FFE28A;
   margin-bottom: 2px;
 }

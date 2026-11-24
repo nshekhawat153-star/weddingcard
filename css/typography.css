@@ -1,20 +1,21 @@
 /* Typography Styles for City 2 Wedding Invitation - Muskan & Aman */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Gotu&family=Rozha+One&family=Yatra+One&family=Tiro+Devanagari+Hindi:ital@0;1&family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Upright:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700;800&family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Marcellus&family=Pinyon+Script&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Cinzel:wght@500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Montserrat:wght@400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-  --font-royal: 'Cinzel', 'Cormorant Upright', Georgia, serif;
-  --font-serif: 'Playfair Display', 'Cormorant', Georgia, serif;
-  --font-hero: 'Cinzel', 'Cormorant', Georgia, serif;
-  --font-serif-upright: 'Cormorant Upright', 'Cormorant', serif;
-  --font-devanagari: 'Gotu', 'Tiro Devanagari Hindi', sans-serif;
-  --font-hindi-display: 'Rozha One', 'Gotu', serif;
-  --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-  --font-display: 'Aboreto', cursive, serif;
+  --font-luxury: 'Italiana', 'Cinzel', Georgia, serif;
+  --font-marcellus: 'Marcellus', 'Cinzel', Georgia, serif;
+  --font-script: 'Pinyon Script', cursive;
+  --font-royal: 'Italiana', 'Cinzel', Georgia, serif;
+  --font-serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --font-hero: 'Italiana', 'Cinzel', Georgia, serif;
+  --font-serif-upright: 'Cormorant Garamond', serif;
+  --font-sans: 'Montserrat', 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-display: 'Italiana', cursive, serif;
 
   --color-cream: rgb(243, 236, 186);
   --color-cream-soft: #fbf7ee;
-  --color-teal: rgb(69, 160, 134);
-  --color-teal-dark: #226b57;
+  --color-teal: rgb(46, 134, 110);
+  --color-teal-dark: #1b5e50;
   --color-maroon: #8a1226;
   --color-maroon-dark: #660c1b;
   --color-maroon-light: rgba(138, 18, 38, 0.08);
@@ -25,6 +26,18 @@
   --color-sky-dark: #8c1e42;
   --color-parchment: #faf8f5;
   --color-gold-border: rgba(243, 236, 186, 0.45);
+}
+
+.font-luxury {
+  font-family: var(--font-luxury);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-marcellus {
+  font-family: var(--font-marcellus);
 }
 
 .font-royal {
@@ -42,14 +55,6 @@
 
 .font-serif-upright {
   font-family: var(--font-serif-upright);
-}
-
-.font-devanagari {
-  font-family: var(--font-devanagari);
-}
-
-.font-hindi-display {
-  font-family: var(--font-hindi-display);
 }
 
 .font-sans {

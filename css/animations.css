@@ -210,3 +210,221 @@
 .hover-lift:hover {
   transform: translateY(-4px);
 }
+
+/* ==========================================================================
+   8. FUNCTION CARDS: FLORAL PETALS BREEZE & FLOATING ANIMATIONS
+   ========================================================================== */
+@keyframes flowerBreezeTop {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  35% {
+    transform: translateY(-6px) rotate(2.5deg) scale(1.025);
+  }
+  70% {
+    transform: translateY(-3px) rotate(-1.5deg) scale(0.99);
+  }
+}
+
+@keyframes flowerBreezeBottom {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  40% {
+    transform: translateY(6px) rotate(-2.5deg) scale(1.025);
+  }
+  75% {
+    transform: translateY(3px) rotate(1.8deg) scale(0.99);
+  }
+}
+
+/* Continuous breathing petals on cards */
+.card-flower-top {
+  animation: flowerBreezeTop 5s ease-in-out infinite;
+  will-change: transform;
+  transform-origin: top right;
+}
+
+.card-flower-bottom {
+  animation: flowerBreezeBottom 5.5s ease-in-out infinite 0.5s;
+  will-change: transform;
+  transform-origin: bottom left;
+}
+
+/* Stagger each card's flowers slightly for natural variance */
+.event-card:nth-child(2) .card-flower-top {
+  animation-duration: 5.4s;
+  animation-delay: 0.8s;
+}
+.event-card:nth-child(2) .card-flower-bottom {
+  animation-duration: 5.8s;
+  animation-delay: 1.2s;
+}
+
+.event-card:nth-child(3) .card-flower-top {
+  animation-duration: 4.8s;
+  animation-delay: 0.4s;
+}
+.event-card:nth-child(3) .card-flower-bottom {
+  animation-duration: 5.2s;
+  animation-delay: 1.6s;
+}
+
+.event-card:nth-child(4) .card-flower-top {
+  animation-duration: 5.6s;
+  animation-delay: 1.1s;
+}
+.event-card:nth-child(4) .card-flower-bottom {
+  animation-duration: 6s;
+  animation-delay: 0.3s;
+}
+
+/* ==========================================================================
+   9. HIGH-END CARD TEXT REVEAL & SHIMMER
+   ========================================================================== */
+.card-event-name {
+  color: #134e40;
+  text-shadow: 0 1px 2px rgba(19, 78, 64, 0.12);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.event-card:hover .card-event-name {
+  transform: scale(1.02);
+  color: #0d382e;
+}
+
+/* Card inner items staggered reveal when in view */
+.event-card.appear-element .card-inner-content > * {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.event-card.appear-element.is-visible .card-inner-content > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.event-card.appear-element.is-visible .card-event-name {
+  transition-delay: 0.15s;
+}
+.event-card.appear-element.is-visible .card-event-divider {
+  transition-delay: 0.25s;
+}
+.event-card.appear-element.is-visible .card-event-date {
+  transition-delay: 0.35s;
+}
+.event-card.appear-element.is-visible .card-time-pill {
+  transition-delay: 0.45s;
+}
+.event-card.appear-element.is-visible .card-event-venue {
+  transition-delay: 0.55s;
+}
+.event-card.appear-element.is-visible .card-dress-code {
+  transition-delay: 0.65s;
+}
+
+/* Time pill subtle glow */
+@keyframes timePillGlow {
+  0%, 100% {
+    box-shadow: 0 0 0 rgba(138, 18, 38, 0);
+  }
+  50% {
+    box-shadow: 0 2px 14px rgba(138, 18, 38, 0.18);
+  }
+}
+
+.card-time-pill {
+  animation: timePillGlow 3s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   10. FALLING ROYAL ROSE PETALS (Subtle & High-End)
+   ========================================================================== */
+.petals-canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.petal-particle {
+  position: absolute;
+  top: -40px;
+  background: radial-gradient(circle at 35% 30%, #ffc0cb 0%, #e87b99 55%, #c74d70 100%);
+  border-radius: 50% 0 50% 50%;
+  opacity: 0.85;
+  filter: drop-shadow(0 2px 5px rgba(138, 18, 38, 0.15));
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* Gold sparkle petal variant */
+.petal-particle.petal-gold {
+  background: radial-gradient(circle at 35% 30%, #fff6cc 0%, #ffd770 55%, #d4af37 100%);
+  opacity: 0.75;
+}
+
+/* ==========================================================================
+   11. LUXURY AUTO-SCROLL CONTROLLER PILL
+   ========================================================================== */
+.auto-scroll-indicator {
+  position: fixed;
+  bottom: 22px;
+  right: 20px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(36, 18, 24, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--color-gold-border);
+  color: var(--color-cream);
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-family: var(--font-sans);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s ease;
+  opacity: 0.92;
+}
+
+.auto-scroll-indicator:hover {
+  opacity: 1;
+  transform: translateY(-2px);
+  background: rgba(36, 18, 24, 0.95);
+  border-color: #ffd770;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.auto-scroll-icon {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.auto-scroll-indicator.is-scrolling .auto-scroll-dot {
+  width: 6px;
+  height: 6px;
+  background: #45a086;
+  border-radius: 50%;
+  display: inline-block;
+  box-shadow: 0 0 8px #45a086;
+  animation: pulseDot 1.5s infinite;
+}
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.8); }
+}
